@@ -4,35 +4,3 @@
     background-color: #060927;
     color: white;
 }
-main{
-    padding-top: 40px;
-    display: flex;
-}
-header{
-    display: flex;
-}
-
-.header_adres{
-    display: flex;
-}
-.ritual_logo{
-    width: 133px;
-    height: 31px;
-}
-.main_left_block{
-    max-width: 425px;
-    padding-top: 10px;
-    margin: 0 0 0 auto;
-}
-.first_img{
-    width: 615px;
-    height: 432px;
-}
-.main_right_block{
-    justify-content: flex-end;
-}
-.geo_img{
-    width: 20px;
-    height: 30px;
-    padding-left: 5px;
-}
