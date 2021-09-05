@@ -58,9 +58,6 @@ h1 {
     font-weight: 300;
     line-height: 64px;
 }
-h1:first-letter{
-    
-}
 .main_text p{
     max-width:586px;
     font-size: 25px;
@@ -75,4 +72,49 @@ h1:first-letter{
 .header_right{
     padding-left: 100px;
 }
-
+/*КОНЕЦ ПЕРВОГО ЭКРАНА*/
+.avto{
+    margin-top: 160px;
+    display: flex;
+}
+.we_have {
+    padding: 150px 0 0 160px;
+}
+h2{
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    font-weight: 300;
+}
+.we_have ul{
+    padding-top: 75px;
+}
+.we_have ul li {
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 300;
+}
+/*КОНЕЦ ВТОРОГО ЭКРАНА*/
+.also{
+    margin-top: 160px;
+    display: flex;
+    justify-content: flex-end;
+}
+h3{
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    font-weight: 300;
+}
+.and_also {
+    padding-top: 120px;
+}
+.and_also ul{
+    padding-top: 75px;
+}
+.and_also ul li {
+    line-height: 40px;
+    font-size: 25px;
+    font-weight: 300;
+}
+.foto_market  {
+    padding-left: 110px;
+}
