@@ -6,6 +6,7 @@
 }
 body {
     font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
 }
 main {
     display: flex;
@@ -105,7 +106,7 @@ h3{
     font-weight: 300;
 }
 .and_also {
-    padding-top: 120px;
+    padding-top: 100px;
 }
 .and_also ul{
     padding-top: 75px;
@@ -118,3 +119,28 @@ h3{
 .foto_market  {
     padding-left: 110px;
 }
+.also_bottom  {
+    display: flex;
+    padding-top: 130px;
+}
+.also_bottom p {
+    font-weight: 300;
+    font-size: 25px;
+    padding-top: 30px;
+}
+/* ЧЕТВЕРТАЯ СЕКЦИЯ */
+.geo_block{
+    margin: auto;
+    padding-top: 180px;
+    width: 560px;
+}
+h4{
+    max-width: 453px;
+    margin: auto;
+    font-family: 'Lora', serif;
+    font-size: 60px;
+    font-weight: 300;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+/* ПОДВАЛ */
