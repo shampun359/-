@@ -8,6 +8,9 @@ body {
     font-family: 'Roboto', sans-serif;
     overflow-x:hidden;
 }
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
 main {
     display: flex;
     justify-content: flex-end;
@@ -28,6 +31,9 @@ main {
 .header_bottom{
     display: flex;
     justify-content: flex-end;
+}
+.header_bottom a{
+    text-decoration: none;
 }
 .header_bottom p {
     font-family: 'Roboto', sans-serif;
@@ -59,19 +65,79 @@ h1 {
     font-weight: 300;
     line-height: 64px;
 }
-.main_text p{
+h1::first-letter {
+    color: #ffffd3;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #969685,
+        0 0 82px #969685,
+        0 0 92px #969685,
+        0 0 102px #969685,
+        0 0 151px #969685;
+  }
+.main_text div{
     max-width:586px;
     font-size: 25px;
     font-weight: 300;
     padding-top: 40px;
 }
+.main_text div p{
+    padding: 0;
+}
 .foto_ritual{
     max-width: 908px;
     max-height: 662px;
-    width: 908px;
+    width: 100%;
 }
 .header_right{
     padding-left: 100px;
+}
+@media (max-width:1600px){
+    h1 {
+        font-size: 60px;
+    }
+    .header_right {
+        padding-left: 0px; 
+    }
+    
+}
+@media (max-width:1450px){
+    h1 {
+        font-size: 50px;
+        padding-top: 90px;
+    }
+    .main_text p {
+        font-size: 20px;
+    }
+    .foto_ritual {
+        max-width: 700px;
+        width: 100%;
+    }
+    .main_text p {
+        font-size: 18px;
+    }
+}
+@media (max-width:1280px){
+    .foto_ritual {
+        max-width: 600px;
+        width: 100%;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 50px;
+        padding-top: 60px;
+    }
+    .header_number a {
+        font-size: 30px;
+    }
+    .header_number {
+        padding-top: 15px;
+    }
+    .geo {
+        width: 28px;
+    }
 }
 /*КОНЕЦ ПЕРВОГО ЭКРАНА*/
 .avto{
@@ -80,6 +146,10 @@ h1 {
 }
 .we_have {
     padding: 150px 0 0 160px;
+}
+.foto_avto img{
+    max-width: 928px;
+    width: 100%;
 }
 h2{
     font-family: 'Lora', serif;
@@ -116,12 +186,19 @@ h3{
     font-size: 25px;
     font-weight: 300;
 }
+.and_also ul li img{
+    padding-right: 10px;
+}
 .foto_market  {
     padding-left: 110px;
 }
 .also_bottom  {
     display: flex;
     padding-top: 130px;
+}
+.foto_market img {
+    max-width: 910px;
+    width: 100%;
 }
 .also_bottom p {
     font-weight: 300;
