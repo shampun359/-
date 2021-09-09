@@ -100,7 +100,6 @@ h1::first-letter {
     .header_right {
         padding-left: 0px; 
     }
-    
 }
 @media (max-width:1450px){
     h1 {
@@ -161,7 +160,50 @@ h1::first-letter {
     .main_text p {
         font-size: 15px;
     }
-
+}
+@media (max-width:870px){
+    .foto_ritual {
+        max-width: 400px;
+    }
+    h1 {
+        padding-top: 30px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .main_text div {
+        padding-top: 20px;
+    }
+}
+@media (max-width:755px){
+    main {
+        display: block;
+    }
+    .header_top {
+        justify-content: space-between;
+    }
+    .header_bottom {
+        justify-content: flex-end;
+    }
+    .header_number a {
+        font-size: 30px;
+    }
+    h1 {
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .main_text div {
+        max-width: none;
+    }
+    .main_text div {
+        text-align: center;
+    }
+    .header_right {
+        text-align: center;
+    }
+    .foto_ritual {
+        max-width: 700px;
+    }
 }
 /*КОНЕЦ ПЕРВОГО ЭКРАНА*/
 .avto{
