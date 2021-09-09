@@ -38,7 +38,6 @@ main {
 .header_bottom p {
     font-family: 'Roboto', sans-serif;
     padding-top: 13px;
-    max-width: 161px;
     font-size: 22px;
     font-weight: 300;
     line-height: 20px;
@@ -138,6 +137,31 @@ h1::first-letter {
     .geo {
         width: 28px;
     }
+}
+@media (max-width:1050px){
+    .foto_ritual {
+        max-width: 500px;
+    }
+    .logo {
+        max-width: 160px;
+    }
+    .header_number a {
+        font-size: 25px;
+    }
+    .header_bottom p {
+        font-size: 17px;
+    }
+    .geo {
+        height: 44px;
+    }
+    h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .main_text p {
+        font-size: 15px;
+    }
+
 }
 /*КОНЕЦ ПЕРВОГО ЭКРАНА*/
 .avto{
