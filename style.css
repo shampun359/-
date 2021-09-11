@@ -7,6 +7,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x:hidden;
+    min-width: 360px;
 }
 li {
     list-style-type: none; /* Убираем маркеры */
@@ -148,7 +149,7 @@ h1::first-letter {
         max-width: 160px;
     }
     .header_number a {
-        font-size: 25px;
+        font-size: 23px;
     }
     .header_bottom p {
         font-size: 17px;
@@ -210,6 +211,17 @@ h1::first-letter {
     .header_right {
         padding-left: 0px;
     }
+    .left_main {
+        padding-bottom: 70px;
+    }
+}
+@media (max-width:420px){
+    .header_number a {
+        font-size: 25px;
+    }
+    .header_bottom p {
+        font-size: 14px;
+    }
 }
 /*КОНЕЦ ПЕРВОГО ЭКРАНА*/
 .avto{
@@ -217,7 +229,7 @@ h1::first-letter {
     display: flex;
 }
 .we_have {
-    padding: 150px 0 0 160px;
+    margin: auto;
 }
 .foto_avto img{
     max-width: 928px;
@@ -227,6 +239,7 @@ h2{
     font-family: 'Lora', serif;
     font-size: 60px;
     font-weight: 300;
+    min-width: 425px;
 }
 .we_have ul{
     padding-top: 75px;
@@ -235,6 +248,53 @@ h2{
     line-height: 40px;
     font-size: 25px;
     font-weight: 300;
+}
+@media (max-width:1465px){
+    .foto_avto img {
+        max-width: 828px;
+    }
+}
+@media (max-width:1280px){
+    .we_have {
+        text-align: center;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .we_have ul li {
+        line-height: 18px;
+        font-size: 18px;
+    }
+    .we_have ul {
+        padding-top: 40px;
+    }
+    .foto_avto img {
+        max-width: 850px;
+    }
+}
+@media (max-width:855px){
+    .foto_avto img {
+        min-width: 443px;
+    }
+}
+@media (max-width:755px){
+    .avto {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 100px;
+    }
+    .foto_avto{
+        text-align: center;
+    }
+    .we_have ul {
+        padding-bottom: 100px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .foto_avto img {
+        max-width: 700px;
+    }
 }
 /*КОНЕЦ ВТОРОГО ЭКРАНА*/
 .also{
