@@ -178,7 +178,7 @@ h1::first-letter {
         padding-top: 20px;
     }
 }
-@media (max-width:755px){
+@media (max-width:830px){
     main {
         display: block;
     }
@@ -272,12 +272,7 @@ h2{
         max-width: 850px;
     }
 }
-@media (max-width:855px){
-    .foto_avto img {
-        min-width: 443px;
-    }
-}
-@media (max-width:755px){
+@media (max-width:830px){
     .avto {
         display: flex;
         flex-direction: column-reverse;
@@ -292,8 +287,10 @@ h2{
     h2 {
         font-size: 35px;
     }
+}
+@media (max-width:500px){
     .foto_avto img {
-        max-width: 700px;
+        max-width:700px;
     }
 }
 /*КОНЕЦ ВТОРОГО ЭКРАНА*/
