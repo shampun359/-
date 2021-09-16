@@ -284,13 +284,17 @@ h2{
     .we_have ul {
         padding-bottom: 100px;
     }
+    .we_have ul li {
+        text-align: initial;
+        margin: auto;
+        max-width: 350px;
+    }
     h2 {
         font-size: 35px;
     }
-}
-@media (max-width:500px){
     .foto_avto img {
-        max-width:700px;
+        text-align: center;
+        max-width: 700px;
     }
 }
 /*КОНЕЦ ВТОРОГО ЭКРАНА*/
@@ -306,20 +310,21 @@ h3{
 }
 .and_also {
     padding-top: 100px;
+    padding-right: 110px;
+    margin: 0 10px 0 10px;
 }
 .and_also ul{
     padding-top: 75px;
+    white-space: nowrap;
 }
 .and_also ul li {
     line-height: 40px;
     font-size: 25px;
     font-weight: 300;
+    white-space: nowrap;
 }
 .and_also ul li img{
     padding-right: 10px;
-}
-.foto_market  {
-    padding-left: 110px;
 }
 .also_bottom  {
     display: flex;
@@ -333,6 +338,105 @@ h3{
     font-weight: 300;
     font-size: 25px;
     padding-top: 30px;
+}
+@media (max-width:1580px){
+    .and_also {
+        padding-right: 20px;
+    }
+}
+@media (max-width:1490px){
+    .and_also {
+        padding-right: 0px;
+    }
+    .and_also ul li {
+        white-space: nowrap;
+    }
+    .and_also ul {
+        white-space: nowrap;
+    }
+    .also_bottom {
+        padding-top: 60px;
+    }
+}
+@media (max-width:1465px){
+    .foto_market img {
+        max-width: 828px;
+    }
+}
+@media (max-width:1465px){
+    .also_bottom {
+        padding-top: 20px;
+    }
+}
+@media (max-width:1280px){
+    .we_have {
+        text-align: center;
+    }
+    h3 {
+        font-size: 30px;
+    }
+    .and_also ul li {
+        line-height: 18px;
+        font-size: 18px;
+        white-space: nowrap;
+    }
+    .and_also ul {
+        padding-top: 40px;
+        margin: auto;
+        white-space: nowrap;
+    }
+    .foto_market img {
+        max-width: 660px;
+    }
+    .also_bottom p {
+        font-size: 18px;
+    }
+}
+@media (max-width:1020px){
+    .and_also {
+        padding-top: 0px;
+    }
+}
+@media (max-width:830px){
+    .also {
+        margin-top: 100px;
+        display: block;
+    }
+    .foto_market{
+        text-align: center;
+    }
+    .and_also ul {
+        padding-bottom: 20px;
+    }
+    .and_also ul li {
+        text-align: initial;
+        margin: auto;
+        max-width: 350px;
+    }
+    h3 {
+        font-size: 35px;
+    }
+    .foto_market img {
+        max-width: 700px;
+    }
+    .and_also {
+        text-align: center;
+    }
+    .also_bottom {
+        justify-content: center;
+        padding-bottom: 80px;
+    }
+    .also_bottom p {
+        text-align: left;
+    }
+}
+@media (max-width:500px){
+    .and_also ul {
+        margin: auto;
+    }
+    .and_also ul li {
+        font-size: 16px;
+    }
 }
 /* ЧЕТВЕРТАЯ СЕКЦИЯ */
 .geo_block{
