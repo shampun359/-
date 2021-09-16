@@ -253,6 +253,12 @@ h2{
     .foto_avto img {
         max-width: 828px;
     }
+    .we_have ul li {
+        text-align: initial;
+        margin: auto;
+        max-width: 350px;
+        white-space: nowrap;
+    }
 }
 @media (max-width:1280px){
     .we_have {
@@ -283,11 +289,6 @@ h2{
     }
     .we_have ul {
         padding-bottom: 100px;
-    }
-    .we_have ul li {
-        text-align: initial;
-        margin: auto;
-        max-width: 350px;
     }
     h2 {
         font-size: 35px;
@@ -442,15 +443,23 @@ h3{
 .geo_block{
     margin: auto;
     padding-top: 180px;
-    width: 560px;
 }
 h4{
-    max-width: 453px;
-    margin: auto;
+    text-align: center;
     font-family: 'Lora', serif;
     font-size: 60px;
     font-weight: 300;
     padding-bottom: 100px;
     padding-top: 50px;
+}
+@media (max-width:1280px){
+    h4{
+        font-size: 30px;
+    }
+}
+@media (max-width:830px){
+    h4{
+        font-size: 35px;
+    }
 }
 /* ПОДВАЛ */
