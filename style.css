@@ -240,6 +240,8 @@ h2{
     font-size: 60px;
     font-weight: 300;
     min-width: 425px;
+    max-width: 532.5px;
+    white-space: nowrap;
 }
 .we_have ul{
     padding-top: 75px;
@@ -270,6 +272,7 @@ h2{
     .we_have ul li {
         line-height: 18px;
         font-size: 18px;
+        max-width: 300px;
     }
     .we_have ul {
         padding-top: 40px;
@@ -461,5 +464,43 @@ h4{
     h4{
         font-size: 35px;
     }
+    .geo_block{
+        padding-top: 80px;
+    }
 }
 /* ПОДВАЛ */
+footer{
+    margin: 200px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_contact{
+    max-width: 184.5px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.footer_contact a {
+   text-decoration: none; 
+}
+.copyright{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 70px;
+}
+.footer_logo {
+    padding-top: 50px;
+}
+@media (max-width:830px){
+    footer{
+        margin: 100px 0 20px 0;
+        display: block;
+        text-align: -webkit-center;
+    }
+    .footer_contact{
+        max-width: 163px;
+        font-size: 14px;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
