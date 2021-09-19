@@ -7,7 +7,6 @@
 body {
     font-family: 'Roboto', sans-serif;
     overflow-x:hidden;
-    min-width: 360px;
 }
 li {
     list-style-type: none; /* Убираем маркеры */
@@ -122,6 +121,9 @@ h1::first-letter {
     }
 }
 @media (max-width:1280px){
+    .left_main {
+        min-width: 350px;
+    }
     .foto_ritual {
         max-width: 600px;
         width: 100%;
@@ -132,13 +134,16 @@ h1::first-letter {
         padding-top: 60px;
     }
     .header_number a {
-        font-size: 30px;
+        font-size: 25px;
     }
     .header_number {
         padding-top: 15px;
     }
     .geo {
         width: 28px;
+    }
+    .header_bottom p {
+        font-size: 18px;
     }
 }
 @media (max-width:1050px){
@@ -301,6 +306,11 @@ h2{
         max-width: 700px;
     }
 }
+@media (max-width:400px){
+    h2 {
+        min-width: 300px;
+    }
+}
 /*КОНЕЦ ВТОРОГО ЭКРАНА*/
 .also{
     margin-top: 160px;
@@ -458,6 +468,10 @@ h4{
 @media (max-width:1280px){
     h4{
         font-size: 30px;
+        padding-bottom: 50px;
+    }
+    .geo_block{
+        padding-top: 100px;
     }
 }
 @media (max-width:830px){
