@@ -11,40 +11,29 @@ body {
 }
 li {
     list-style-type: none; /* Убираем маркеры */
-   }
+}
 main {
     display: flex;
     justify-content: flex-end;
     padding-top: 21px;
 }
-.left_main{
-    padding-top: 5px;
-    max-width: 765px;
-}
 .header_top{
     display: flex;
-    justify-content: space-between;
+    align-items: flex-end;
 }
-.logo{
-    max-width: 200px;
-    max-height: 50px;
-}
-.header_bottom{
+header div div {
     display: flex;
-    justify-content: flex-end;
+    margin-left: 300px;
 }
-.header_bottom a{
+header div div a{
     text-decoration: none;
 }
-.header_bottom p {
+header div div p {
     font-family: 'Roboto', sans-serif;
     padding-top: 13px;
     font-size: 22px;
     font-weight: 300;
     line-height: 20px;
-}
-.header_number {
-    padding-top: 10px;
 }
 .header_number a{
     font-size: 35px;
@@ -53,10 +42,13 @@ main {
     font-weight: 300;
 }
 .geo {
+    padding-left: 5px;
     max-width: 32px;
     max-height: 49px;
     padding-top: 5px;
 }
+/* header end */
+/* Левый блок */
 h1 {
     padding-top: 162px;
     color: #ffffd3;
@@ -65,27 +57,21 @@ h1 {
     font-weight: 300;
     line-height: 64px;
 }
-h1::first-letter {
-    color: #ffffd3;
-    text-shadow:
-        0 0 7px #fff,
-        0 0 10px #fff,
-        0 0 21px #fff,
-        0 0 42px #969685,
-        0 0 82px #969685,
-        0 0 92px #969685,
-        0 0 102px #969685,
-        0 0 151px #969685;
-  }
-.main_text div{
-    max-width:586px;
-    font-size: 25px;
-    font-weight: 300;
-    padding-top: 40px;
+.main_text p {
+    font-family: 'Lora', serif;
+    font-size: 35px;
 }
 .main_text div p{
-    padding: 0;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 75px;
+    background-color: #dad7b4;
+    max-width: 360px;
+    color: black;
+    padding-left: 10px;
 }
+/* Левый блок конец */
 .foto_ritual{
     max-width: 908px;
     max-height: 662px;
@@ -93,6 +79,14 @@ h1::first-letter {
 }
 .header_right{
     padding-left: 100px;
+}
+@media (max-width:1700px){
+    header div div {
+        margin-left: 100px;
+    }
+    .header_right{
+        padding-left: 50px;
+    }
 }
 @media (max-width:1600px){
     h1 {
@@ -110,15 +104,9 @@ h1::first-letter {
         font-size: 50px;
         padding-top: 90px;
     }
-    .main_text p {
-        font-size: 20px;
-    }
     .foto_ritual {
         max-width: 700px;
         width: 100%;
-    }
-    .main_text p {
-        font-size: 18px;
     }
 }
 @media (max-width:1280px){
@@ -143,8 +131,8 @@ h1::first-letter {
     .geo {
         width: 28px;
     }
-    .header_bottom p {
-        font-size: 18px;
+    header div div p {
+        font-size: 16px;
     }
 }
 @media (max-width:1050px){
@@ -157,7 +145,7 @@ h1::first-letter {
     .header_number a {
         font-size: 23px;
     }
-    .header_bottom p {
+    header div div p {
         font-size: 17px;
     }
     .geo {
@@ -167,11 +155,8 @@ h1::first-letter {
         font-size: 30px;
         line-height: 35px;
     }
-    .main_text p {
-        font-size: 14px;
-    }
 }
-@media (max-width:870px){
+@media (max-width:942px){
     .foto_ritual {
         max-width: 400px;
     }
@@ -183,15 +168,30 @@ h1::first-letter {
     .main_text div {
         padding-top: 20px;
     }
+    .main_text p {
+        font-size: 18px;
+    }
+    .main_text div p {
+        font-size: 18px;
+        max-width: 255px;
+        margin-top: 0px;
+    }
 }
 @media (max-width:830px){
+    .main_text p {
+        text-align: center;
+        max-width: none;
+    }
+    .main_text div p {
+        margin: auto;
+    }
     main {
         display: block;
     }
     .header_top {
-        justify-content: space-between;
+        justify-content: space-around;
     }
-    .header_bottom {
+    header div div {
         justify-content: flex-end;
     }
     .header_number a {
@@ -221,12 +221,15 @@ h1::first-letter {
         padding-bottom: 70px;
     }
 }
-@media (max-width:420px){
-    .header_number a {
+@media (max-width:440px){
+    .header_number {
         font-size: 25px;
     }
-    .header_bottom p {
-        font-size: 14px;
+    header div div p {
+        font-size: 15px;
+    }
+    header div div {
+        margin-left: 0px;
     }
 }
 /*КОНЕЦ ПЕРВОГО ЭКРАНА*/
@@ -312,7 +315,6 @@ h2{
         min-width: 300px;
     }
 }
-/*КОНЕЦ ВТОРОГО ЭКРАНА*/
 .also{
     margin-top: 160px;
     display: flex;
@@ -463,12 +465,17 @@ h4{
     font-family: 'Lora', serif;
     font-size: 60px;
     font-weight: 300;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-top: 50px;
 }
-h4::first-letter {
-    color: #ffffd3;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #969685, 0 0 82px #969685, 0 0 92px #969685, 0 0 102px #969685, 0 0 151px #969685;
+.geo_block p {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+.geo_block div{
+    text-align: center;
 }
 @media (max-width:1280px){
     h4{
@@ -487,27 +494,47 @@ h4::first-letter {
         padding-top: 80px;
     }
 }
-/* ПОДВАЛ */
+/* Подвал */
 footer{
     margin: 200px 0 20px 0;
     display: flex;
     justify-content: space-around;
 }
 .footer_contact{
-    max-width: 184.5px;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 300;
 }
 .footer_contact a {
    text-decoration: none; 
 }
-.copyright{
-    font-size: 18px;
+.footer_center{
+    font-size: 25px;
     font-weight: 300;
-    padding-top: 70px;
+    display: grid;
+}
+.footer_center a{
+    text-decoration: none;
+}
+.footer_center a:hover{
+    color: red;
 }
 .footer_logo {
-    padding-top: 50px;
+    text-align: end;
+}
+.footer_logo p {
+    font-size: 25px;
+    font-weight: 300;
+}
+@media (max-width:1280px){
+    .footer_logo p {
+        font-size: 18px;
+    }
+    .footer_center{
+        font-size: 18px;
+    }
+    .footer_contact{
+        font-size: 18px;
+    }
 }
 @media (max-width:830px){
     footer{
@@ -516,10 +543,17 @@ footer{
         text-align: -webkit-center;
     }
     .footer_contact{
-        max-width: 163px;
-        font-size: 14px;
+        font-size: 16px;
+        margin-bottom: 25px;
     }
-    .copyright{
-        font-size: 14px;
+    .footer_center{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    .footer_logo {
+        text-align: center;
+    }
+    .footer_logo p {
+        font-size: 16px;
     }
 }
