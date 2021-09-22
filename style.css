@@ -345,7 +345,7 @@ h3{
 }
 .and_also {
     padding-top: 100px;
-    padding-right: 230px;
+    padding-right: 350px;
     margin: 0 10px 0 10px;
 }
 .and_also ul{
@@ -380,9 +380,6 @@ h3{
     }
 }
 @media (max-width:1490px){
-    .and_also {
-        padding-right: 0px;
-    }
     .and_also ul li {
         white-space: nowrap;
     }
@@ -427,11 +424,6 @@ h3{
         font-size: 18px;
     }
 }
-@media (max-width:1020px){
-    .and_also {
-        padding-top: 0px;
-    }
-}
 @media (max-width:830px){
     .also {
         margin-top: 100px;
@@ -456,6 +448,7 @@ h3{
     }
     .and_also {
         text-align: center;
+        padding-top: 0px;
     }
     .also_bottom {
         justify-content: center;
