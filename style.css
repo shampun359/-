@@ -1,5 +1,111 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: ;
+body {
+    max-width: 1770px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:hidden;
+    margin: 0 auto ;
+}
+/* Хедер */
+header,.block_nav{
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    padding-top: 15px;
+    max-width: 1522px;
+    width: 100%;
+    margin: 0 auto ;
+}
+.block_logo  {
+    max-width: 244px;
+    width: 100%;
+}
+.block_logo  img {
+    width: 225px;
+    height: 75px;
+}
+.block_nav{
+    padding-top: 25px;
+    max-width: 740px;
+    width: 100%;
+}
+.block_nav a {
+    text-decoration: none;
+    color: black;
+}
+.block_nav a p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+}
+@media (max-width:700px){
+    header{
+        display: block;
+    }
+    .block_logo{
+        margin: 0 auto;
+    }
+    .block_nav a p {
+        font-size: 16px;
+    }
+}
+/*Первая  секция*/
+main  {
+    max-width: 1770px;
+    width: 100%;
+    background: url(img/main.jpg)  no-repeat;
+    padding-bottom: 100px;
+    animation: anim 15s ease-in-out infinite;
+    animation-delay: 10s;
+}
+@keyframes anim {
+    0% {
+        background: url(img/main.jpg) no-repeat;
+      }
+    30% {
+      background: url(img/main2.jpg) no-repeat;
+    }
+    90% {
+      background: url(img/main3.jpg) no-repeat;
+    }
+    
+  }
+h1{
+    padding-top: 85px;
+    max-width: 950px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+    color: #FFFFFF;
+    padding-left: 100px;
+}
+main  p {
+    max-width: 790px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    padding-left: 100px;
+}
+main button  {
+    margin-top: 90px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 18.571px 37.1419px;
+    width: 280px;
+    background: #FF9900;
+    
+}
+main button span{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23.4581px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
 }
