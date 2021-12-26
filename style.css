@@ -4,13 +4,17 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x:hidden;
     margin: 0 auto ;
+    min-width: 400px;
+}
+@media (max-width:400px){
+    body {
+    overflow-x:scroll;
+    }
 }
 /* Хедер */
-header,.block_nav{
-    display: flex;
-    justify-content: space-between;
-}
 header {
+    display: flex;
+    justify-content: space-around;
     padding-top: 15px;
     max-width: 1522px;
     width: 100%;
@@ -25,6 +29,8 @@ header {
     height: 75px;
 }
 .block_nav{
+    display: flex;
+    justify-content: space-between;
     padding-top: 25px;
     max-width: 740px;
     width: 100%;
@@ -45,6 +51,9 @@ header {
     .block_logo{
         margin: 0 auto;
     }
+    .block_nav  {
+        justify-content: space-around;
+    }
     .block_nav a p {
         font-size: 16px;
     }
@@ -55,18 +64,18 @@ main  {
     width: 100%;
     background: url(img/main.jpg)  no-repeat;
     padding-bottom: 100px;
-    animation: anim 15s ease-in-out infinite;
+    /*animation: anim 15s ease-in-out infinite;*/
     animation-delay: 10s;
 }
 @keyframes anim {
     0% {
         background: url(img/main.jpg) no-repeat;
       }
-    30% {
-      background: url(img/main2.jpg) no-repeat;
+    50% {
+        background: url(img/main2.jpg) no-repeat;
     }
-    90% {
-      background: url(img/main3.jpg) no-repeat;
+    100% {
+        background: url(img/main3.jpg) no-repeat;
     }
     
   }
@@ -108,4 +117,44 @@ main button span{
     line-height: 29px;
     text-align: center;
     color: #FFFFFF;
+}
+@media (max-width:1080px){
+    h1 {
+        max-width: 650px;
+        font-size: 50px;
+        margin: 0 auto;
+        padding-left: 0px;
+    }
+    main p {
+        padding-left: 0px;
+        margin: 0 auto;
+        font-size: 18px;
+        max-width: 650px;
+        padding-bottom: 50px;
+    }
+    main button{
+        margin: auto;
+    }
+}
+@media (max-width:700px){
+    h1 {
+        font-size: 35px;
+        max-width: 500px;
+        line-height: 40px;
+        padding-bottom: 50px;
+    }
+    main p {
+        max-width: 550px;
+        font-size: 16px;
+    }
+}
+@media (max-width:500px){
+    h1 {
+        font-size: 30px;
+        max-width: 400px;
+    }
+    main p {
+        max-width: 400px;
+        font-size: 14px;
+    }
 }
