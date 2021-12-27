@@ -5,6 +5,7 @@ body {
     overflow-x:hidden;
     margin: 0 auto ;
     min-width: 400px;
+    background: #FFFFFF;
 }
 @media (max-width:400px){
     body {
@@ -365,3 +366,102 @@ h2{
         padding-top: 310px;
     }
 }
+/*Как мы работаем*/
+.work{
+    margin-top: 100px;
+}
+h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+}
+.steps{
+    margin-top: 50px;
+}
+.steps button{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    border: none;
+    background: #FFFFFF;
+}
+.stepsleft{
+    margin-left: 85px;
+}
+.steps button:hover,.steps button:active {
+    color: #FF9900;
+}
+.steps button:focus {
+    border: 2px solid #FF9900;
+    box-sizing: border-box;
+}
+.work_flex_contants{
+    display: flex;
+}
+.work_content {
+    margin-top: 50px;
+}
+.work_content p{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    width: 760px;
+}
+.work_content p b{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+.flex_work{
+    display: flex;
+    margin-top: 50px;
+}
+.work_but_orange {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 19px 38px;
+    background: #FF9900;
+}
+.work_but_orange span{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.work_but_white {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 19px 38px;
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+}
+.work_but_white span  {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+.foto_work{
+    width: 870px;
+    height: 460px;
+    background: url(img/foto_work.jpg) no-repeat;
+    margin-top: 80px;
+    margin-left: auto ;
+}
+
+
+
+
+
+
