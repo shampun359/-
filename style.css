@@ -570,6 +570,7 @@ h4{
 /*FOOOOTEEEEEER*/
 footer{
     display: flex;
+    justify-content: space-around;
     background: #222222;
     max-width: 1920px;
     width: 100%;
@@ -593,7 +594,7 @@ footer a:active{
     color: #E1670E;
 }
 .social {
-    margin-top: 90px;
+    margin-top: 120px;
 }
 .social a:nth-child(2),.social a:nth-child(3){
     margin-left: 25px;
@@ -605,6 +606,7 @@ footer a:active{
     line-height: 59px;
     color: #CACACA; 
     margin-top: 0px;
+    margin-bottom: 25px;
 }
 .facebook, .vk, .inst{
     fill:#7C7C7C;
@@ -619,9 +621,69 @@ footer a:active{
 .facebook:active, .vk:active, .inst:active{
     fill:#E1670E;
 }
-
-
-
-
-
-
+.footer_mid{
+    max-width: 570px;
+    width: 80%;
+}
+#name, #email, textarea{
+    width: 570px;
+    height: 60px;
+    background: #414141;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+    padding: 0 0 0 25px;
+    border: none;
+}
+form div:nth-child(2){
+    margin-top: 25px;
+}
+textarea{
+    margin-top: 25px;
+    height: 150px;
+}
+ form textarea::placeholder, #name::placeholder,#email::placeholder{
+    font-size: 16px;
+    color: #CACACA;
+}
+.post_form_butt{
+    display: flex;
+    margin-top: 32px;
+}
+.post_form_butt label{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #CACACA;
+    padding-top: 20px;
+}
+#button_post{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 38px;
+    width: 269px;
+    height: 58px;
+    background: #FF9900; 
+}
+#button_post:hover{
+    background: #E1670E;
+}
+#scales{
+    padding-top: 10px;
+    margin-top: 28px;
+}
+.footer_right p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #CACACA;
+    max-width: 430px;
+    width: 80%;
+    margin-top: 78px;
+}
