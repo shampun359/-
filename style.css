@@ -573,6 +573,20 @@ h4{
     }
 }
 
+#secret{
+    display: none;
+}
+#secret:checked~.img_secret{
+    transform: rotate(45deg);
+}
+
+.secret_text{
+    display: block;
+}
+
+
+
+
 /*FOOOOTEEEEEER*/
 footer{
     display: flex;
@@ -725,3 +739,9 @@ textarea{
         width: 100%;
     }
 }
+
+  
+
+  
+  
+  
