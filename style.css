@@ -604,13 +604,21 @@ footer a:active{
     font-size: 48px;
     line-height: 59px;
     color: #CACACA; 
+    margin-top: 0px;
 }
-
-
-
-
-
-
+.facebook, .vk, .inst{
+    fill:#7C7C7C;
+}
+.facebook:hover, .vk:hover, .inst:hover{
+    fill:#FF9900;
+}
+.facebook:focus, .vk:focus, .inst:focus{
+    border: 2px solid #FF9900;
+    box-sizing: border-box;
+}
+.facebook:active, .vk:active, .inst:active{
+    fill:#E1670E;
+}
 
 
 
