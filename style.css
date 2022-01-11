@@ -159,7 +159,6 @@ main button span{
     main button{
         margin: auto;
     }
-
 }
 @media (max-width:700px){
     h1 {
@@ -572,21 +571,6 @@ h4{
         font-weight: normal; 
     }
 }
-
-#secret{
-    display: none;
-}
-#secret:checked~.img_secret{
-    transform: rotate(45deg);
-}
-
-.secret_text{
-    display: block;
-}
-
-
-
-
 /*FOOOOTEEEEEER*/
 footer{
     display: flex;

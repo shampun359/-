@@ -1,1 +1,0 @@
-let element = document.querySelector("img_secret");
