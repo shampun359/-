@@ -1,16 +1,20 @@
 body {
-    max-width: 1770px;
-    width: 100%;
     font-family: 'Montserrat', sans-serif;
     overflow-x:hidden;
-    margin: 0 auto ;
     min-width: 400px;
     background: #FFFFFF;
+    margin: 0;
+    padding: 0;
 }
 @media (max-width:400px){
     body {
     overflow-x:scroll;
     }
+}
+header, main, .about, .work, .questions{
+    max-width: 1770px;
+    width: 100%;
+    margin: 0 auto ;
 }
 button{
     border: none;
@@ -432,6 +436,15 @@ h3{
     padding: 19px 38px;
     background: #FF9900;
 }
+.work_but_orange:hover{
+    background-color: #F7B045;
+}
+.work_but_orange:focus{
+    background-color: #F7B045;
+}
+.work_but_orange:active{
+    background-color: #E1670E;
+}
 .work_but_orange span{
     font-style: normal;
     font-weight: bold;
@@ -450,6 +463,19 @@ h3{
     border: 1px solid #333333;
     box-sizing: border-box;
 }
+.work_but_white:hover{
+    background-color: #666666;
+    color: #FFFFFF;
+}
+.work_but_white:focus{
+    background-color: #666666;
+    color: #FFFFFF;
+}
+.work_but_white:active{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
 .work_but_white span  {
     font-style: normal;
     font-weight: normal;
@@ -541,9 +567,44 @@ h4{
         width: 80%;
     }
 }
-
-
-
+/*FOOOOTEEEEEER*/
+footer{
+    display: flex;
+    background: #222222;
+    max-width: 1920px;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: #CACACA;
+}
+footer a:hover{
+    color: #FF9900;
+}
+footer a:focus{
+    border: 2px solid #FF9900;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+footer a:active{
+    color: #E1670E;
+}
+.social {
+    margin-top: 90px;
+}
+.social a:nth-child(2),.social a:nth-child(3){
+    margin-left: 25px;
+}
+.footer_mid p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #CACACA; 
+}
 
 
 
