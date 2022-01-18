@@ -5,12 +5,8 @@ document.querySelectorAll('#button_tab').forEach(function(tabsBtn){
 
         document.querySelectorAll('.work_content').forEach(function(tabContent){
             tabContent.classList.remove('tab_contant_active')
-            console.log('Класс  удалён');
         })
-        
-        document.querySelector('[data-target="${path}"]')//.classList.add('.tab_contant_active')
-        console.log('Класс  добавлен');
+        document.querySelector(`[data-target="${path}"]`).classList.add('tab_contant_active')
     })
 })
-
 
