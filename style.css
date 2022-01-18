@@ -79,7 +79,7 @@ main  {
     width: 100%;
     background: url(img/main.jpg)  no-repeat;
     padding-bottom: 100px;
-    /*animation: anim 15s ease-in-out infinite;*/
+    animation: anim 15s ease-in-out infinite;
     animation-delay: 10s;
 }
 @keyframes anim {
@@ -409,6 +409,10 @@ h3{
 }
 .work_content {
     margin-top: 50px;
+    display: none; 
+}
+.tab_contant_active{
+    display: block;
 }
 .work_content p{
     font-style: normal;
@@ -768,6 +772,5 @@ textarea{
 
   
 
-  
   
   

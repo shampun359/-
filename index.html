@@ -97,13 +97,14 @@
     <section class="work" >
       <h3>Как мы работаем</h3>
       <div class="steps">
-        <button>1 шаг</button>
-        <button class="stepsleft">1 шаг</button>
-        <button class="stepsleft">2 шаг</button>
-        <button class="stepsleft">3 шаг</button>
+        <button class="stepsleft-no" data-path="one" id="button_tab" >1 шаг</button>
+        <button class="stepsleft" data-path="two" id="button_tab" >2 шаг</button>
+        <button class="stepsleft" data-path="three" id="button_tab">3 шаг</button>
+        <button class="stepsleft" data-path="foo" id="button_tab" >4 шаг</button>
       </div>
       <div class="work_flex_contants">
-      <div class="work_content">
+
+      <div class="work_content tab_contant_active" data-target="one">
         <p><b>Проводим консультацию</b> <br>
           Влечет за собой процесс внедрения и модернизации приоритизации разума над 
           эмоциями. В рамках спецификации современных стандартов, некоторые особенности 
@@ -120,6 +121,24 @@
           </div>
         </p>
       </div>
+
+      <div class="work_content tab_contant_none " data-target="two">
+        <p><b>Проводим консультацию</b> <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit temporibus qui 
+          dolores. Rerum, mollitia. Incidunt autem cupiditate nulla. Eaque quas vero impedit culpa 
+          ducimus! Vitae pariatur voluptatem vel molestias, accusantium dolorem amet temporibus a nobis 
+          sit quos ullam officia qui, ipsam maxime dolores eveniet odit tempora maiores deleniti. Ratione 
+          quod, asperiores corporis ducimus pariatur esse quis obcaecati ex sequi reiciendis vitae minima e
+          arum consectetur rem magni nulla, ut voluptates officia iure ab incidunt expedita quo aspernatur 
+          doloribus. Repellat vel ipsa perspiciatis assumenda, officia tempore magni eligendi veniam. 
+          Odit quasi rem pariatur, facere fuga dignissimos maiores eos quae dolorem minima impedit?
+          <div class="flex_work">
+            <button class="work_but_orange"><span>Подробнее</span></button>
+            <button class="work_but_white"><span>Договор</span></button>
+          </div>
+        </p>
+      </div>
+
       <div class="foto_work">
       </div>
     </div>
@@ -220,7 +239,8 @@
         </p>
       </div>
     </footer>
-    <script src="mian.js"></script> 
+    <script src="tabs.js"></script> 
+    <script src="main.js"></script> 
   </body>
 </html>
 
