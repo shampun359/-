@@ -48,8 +48,41 @@ main p {
 }
 /*второй  лист*/
 .sections_too{
-    margin-top: 50px;
-    max-width: 1650px;
-    width: 90%;
-    margin: auto;
+    max-width: 1430px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+}
+
+
+.grid_container {  
+    display: grid;
+    grid-template-columns: 450px 450px 450px; 
+    grid-template-rows: 300px 300px 600px; 
+    gap: 115px 70px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "one one two"
+      "one one three"
+      "foo five six";
+  }
+  
+  .one { grid-area: one; }
+  
+  .two { grid-area: two; }
+  
+  .three { grid-area: three; }
+  
+  .foo { grid-area: foo; }
+  
+  .five { grid-area: five; }
+  
+  .six { grid-area: six; }
+  
+@media (max-width: 900px) {
+    .grid_container {  
+        grid-template-areas: 
+    "one one one"
+    "two two three"
+    "five foo six"; 
+    }
 }
