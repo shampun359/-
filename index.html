@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8"><!--Кодировка-->
-    <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Мегатег отвечает за оптимизацию сайта для мобильных устройств.-->
-    <link rel="stylesheet" href="style.css"> <!--стили-->
-    <!--Google Fonts-->
-    <meta name="description" content="описание сайта" /> <!--Краткое описание сайта-->
-    <meta name="Keywords" content="Ключевое слово1, Ключевое слово2" /> <!--Ключевые слова-->
-    <meta name="author" content="Малашин Михаил" /> <!--Автор сайта-->
-    <title>Кондитерская</title> <!--Название сайта-->
-    
-    <!--Фавикон-->
-  </head>
-  <body>
-<!--ПЕРВАЯ СЕКЦИЯ НАЧАЛО ********************************************************************************************-->
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
   
-  <div class="nav" id="gg">
-    
-    <button @click="changeTextOne">Раздел 1</button>
-    <button @click="changeTextTwo">Раздел 2</button>
-    <button @click="changeTextThree">Раздел 3</button>
-    <div>{{ title }}</div>
+</head>
+<body>
+  
+  <div id="app">
+    <h1>Список задач на {{ message }}</h1>
+    <div>Осталось сделать задач: <span class="counter">2</span></div>
+    <div class="list">
+      <div class="item "  v-bind:class="{ done: isActive_one }">
+        <input type="checkbox" @click="isActive_one = !isActive_one">
+        Развернуть окружение в Codepen
+      </div>
+      <div class="item" v-bind:class="{ done: isActive_two }">
+        <input type="checkbox" @click="isActive_two = !isActive_two">
+        Пройти курс по Vue
+      </div>
+      <div class="item" v-bind:class="{ done: isActive_three }">
+        <input type="checkbox" @click="isActive_three = !isActive_three">
+        Сделать интернет-магазин на Vue
+      </div>
+    </div>
+    <div class="form">
+      <input>
+      <button type="button">Добавить</button>
+    </div>  
   </div>
   
 
-
-
-
-
-
-
-
-
-
-
-  <script src="main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
-
-
