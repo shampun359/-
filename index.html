@@ -11,16 +11,18 @@
 <body>
   
   <div id="app">
-    <h1>Список задач на {{ message }}</h1>
-    <div>Осталось сделать задач: <span class="counter">{{ tasks.length }}</span></div>
+    <h1>Список задач на {{ title }}</h1>
+    <div v-if="count() == 1">Осталась одна задача</div>
+    <div v-else-if="count() == 0">Все задачи выполены</div>
+    <div v-else>Осталось сделать задач: <span class="counter">{{ count() }}</span></div>
     <div class="list">
-      <div class="item "  v-bind:class="{ done: isActive }" v-for="task in tasks">
-        <input type="checkbox" @click="isActive = !isActive">
-        {{ task }}
+      <div class="item " :class="{ done: task.done }" v-for="task in tasks">
+        <input type="checkbox" v-model="task.done">
+        {{ task.text }}
       </div>
     <div class="form">
-      <input v-bind:placeholder="message">
-      <button type="button">Добавить</button>
+      <input v-model="message"  >
+      <button type="button" @click="push_task">Добавить</button>
     </div>  
   </div>
   

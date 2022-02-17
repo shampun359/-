@@ -1,13 +1,21 @@
 new Vue({
   el: '#app',
   data: {
-    message: 'Vue!',
+    title: 'Vue!',
     task_sum: '228!',
-    isActive: false,
     tasks: [
-      'Развернуть окружение в Codepen',
-      'Пройти курс по Vue',
-      'Сделать интернет-магазин на Vue'
+      {text:'Развернуть окружение в Codepen', done: false},
+      {text:'Пройти курс по Vue', done: false},
+      {text:'Сделать интернет-магазин на Vue', done: false}
     ],
+  },
+  methods: {
+    push_task(){
+      this.tasks.push({text: this.message, done: false}); 
+      this.message='' ;
+    },
+    count(){
+      return this.tasks.filter(task => !task.done).length;
+    }
   }
 })
