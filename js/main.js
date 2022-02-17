@@ -2,8 +2,12 @@ new Vue({
   el: '#app',
   data: {
     message: 'Vue!',
-    isActive_one: false,
-    isActive_two: false,
-    isActive_three: false,
+    task_sum: '228!',
+    isActive: false,
+    tasks: [
+      'Развернуть окружение в Codepen',
+      'Пройти курс по Vue',
+      'Сделать интернет-магазин на Vue'
+    ],
   }
 })
