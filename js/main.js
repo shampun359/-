@@ -1,3 +1,12 @@
+Vue.component('like', {
+  data: function(){
+    return {
+      counter: 0
+    }
+  },
+  template:'<button type="button" @click="counter++">&#128420;{{ counter }}</button>'
+})
+
 new Vue({
   el: '#app',
   data: {

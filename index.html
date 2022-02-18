@@ -11,14 +11,14 @@
 <body>
   
   <div id="app">
-    <h1>Список задач на {{ title }}</h1>
+    <h1>Список задач на {{ title }} <like></like></h1>
     <div v-if="count() == 1">Осталась одна задача</div>
     <div v-else-if="count() == 0">Все задачи выполены</div>
     <div v-else>Осталось сделать задач: <span class="counter">{{ count() }}</span></div>
     <div class="list">
       <div class="item " :class="{ done: task.done }" v-for="task in tasks">
         <input type="checkbox" v-model="task.done">
-        {{ task.text }}
+        {{ task.text }}<like></like>
       </div>
     <div class="form">
       <input v-model="message"  >
