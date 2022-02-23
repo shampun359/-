@@ -14,11 +14,21 @@ a:hover{
 li{
     list-style-type: none;
 }
-
+img{
+    max-width: 100%;
+}
 :root{
     --gradient-button: linear-gradient(90deg, rgba(216,87,238,1) 30%, rgba(222,75,197,1) 70%);
 }
-
+.second_list_right button, .three_list_left button,form button{
+    background: var(--gradient-button);
+    border: none;
+    color: white;
+    padding: 20px 100px 20px 120px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 20px;
+}
 /*первый  лист начало*/
 header nav {
     display: flex;
@@ -44,9 +54,6 @@ header nav ul li:not(:first-child){
 .header_nav_social a:not(:first-child){
     margin-left: 20px;
 }
-img{
-    max-width: 100%;
-}
 
 /*Второй  лист начало*/
 .second_list {
@@ -68,14 +75,8 @@ h2{
     text-align: end;
     line-height: 36px;
 }
-.second_list_right button, .three_list_left button {
-    background: var(--gradient-button);
-    border: none;
-    color: white;
-    padding: 20px 100px 20px 120px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 20px;
+.second_list_right button{
+    padding: 1px 6px 1px 6px;
 }
 /*Третий  лист начало*/
 .list_three{
@@ -128,6 +129,10 @@ h3{
     padding-top: 100px;
 }
 /*Четвертый лист начало*/
+.foo_list{
+    border-bottom: solid 5px gray;
+    padding-bottom: 70px;
+}
 .foo_list_top{
     display: flex;
     justify-content: space-around;
@@ -166,9 +171,55 @@ h4{
 .work_right_bottom{
     margin-top: 37px;
 }
-
-
-
+/*Контактов лист начало*/
+.contact_list{
+    display: flex;
+    justify-content: space-evenly;
+}
+.div_contact{
+    margin-top: 105px;
+}
+.div_contact a p{
+    margin-top: 50px;
+}
+.div_contact a p img{
+    margin-right: 50px;
+}
+h5{
+    font-size: 36px;
+    margin-bottom: 0px;
+} 
+form {
+    display: flex;
+    flex-direction: column;
+}
+form input{
+    margin-top: 35px;
+    width: 440px;
+    border: none;
+    border-bottom: solid grey 1px;
+    padding-bottom: 23px;
+    font-size: 13px;
+}
+form button{
+    margin-top: 50px;
+}
+/*FOOTER начало*/
+footer{
+    margin-top: 70px;
+    background-image: url(img/footer.png);
+    max-width: 1920px;
+    height: 320px;
+}
+footer div{
+    padding-top: 165px;
+    text-align: center;
+}
+footer p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}
 
 
 
@@ -218,7 +269,7 @@ h4{
         max-width: 720px;
         margin-left: 20px;
     }
-    h2, h3{
+    h2, h3, h5{
         font-size: 30px;
         text-align: center;
     }
@@ -262,6 +313,22 @@ h4{
         margin-right: 15px;
         margin-left: 15px;
     }
+    .contact_list {
+        flex-direction: column;
+        align-items: center;
+    }
+    form button{
+        max-width: 550px;
+    }
+    .div_contact {
+        margin-top: 60px;
+    }
+  
+}
+@media (max-width: 510px){ 
+    form input{
+        width: 350px;
+    }
 }
 @media (max-width: 420px){
     header nav ul li:not(:first-child) {
@@ -272,5 +339,8 @@ h4{
     }
     .sdvig_coding:not(:first-child) {
         margin-left: 40px;
+    }
+    form input{
+        width: 300px;
     }
 }
