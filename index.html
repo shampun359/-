@@ -5,185 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Мегатег отвечает за оптимизацию сайта для мобильных устройств.-->
     <link rel="stylesheet" href="style.css"> <!--стили-->
     <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <!--Google Fonts-->
     <meta name="description" content="описание сайта" /> <!--Краткое описание сайта-->
     <meta name="Keywords" content="Ключевое слово1, Ключевое слово2" /> <!--Ключевые слова-->
     <meta name="author" content="Малашин Михаил" /> <!--Автор сайта-->
-    <title>Компания</title> <!--Название сайта-->
+    <title>Кондитерская</title> <!--Название сайта-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Фавикон-->
   </head>
   <body>
 <!--ПЕРВАЯ СЕКЦИЯ НАЧАЛО ********************************************************************************************-->
-<main>
 
-  <header>
-    <nav>
-      <div>
-        <img src="img/logo.png" alt="Логотип">
-      </div>
-      <ul>
-        <li><a href="#">Servces</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Rewiews</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <div class="header_nav_social">
-        <a href="tel:+8999 999 99 99" >+8(999)999 99 99</a>
-        <a href="#"><img src="img/header_facebook.png" alt="facebook"></a>
-        <a href="#"><img src="img/header_twitter.png" alt="twitter"></a>
-        <a href="#"><img src="img/header_in.png" alt="in"></a>
-      </div>
-    </nav>
-  </header>
 
-  <picture>
-    <source srcset="img/first_list.png" media="(min-width: 1080px)">
-    <source srcset="img/first_list_1080.png" media="(min-width: 600px)">
-    <img src="img/first_list_860.png" alt="our work">
-   </picture>
+<div class="container-fluid row_color ggg" >
+  <div class="row">
 
-  <!--Вторая СЕКЦИЯ НАЧАЛО ********************************************************************************************-->
-  <section class="second_list">
-
-    <div class="second_list_left">
-      <img src="img/second_list.png" alt="fon">
+    <div class="col block_color text-center">
+      HOME
     </div>
-
-    <div class="second_list_right">
-      <h2>Shortly about us</h2>
-      <p>We are a fairly small, flexible design studio that designs for print and web. 
-        We work flexibly with clients to fulfil their design needs. 
-        Whether you need to create a brand from scratch, including 
-        marketing materials and a beautiful and functional website or whether 
-        you are looking for a design refresh we are confident you will be
-        pleased with the results
-      </p>
-      <button>learn more &#8594;</button>
+    <div class="col block_color text-center">
+      ABOUT
     </div>
-
-  </section>
- <!--Третья СЕКЦИЯ НАЧАЛО ********************************************************************************************-->
-
- <section class="list_three">
-  <div class="three_list_left">
-    <h3>Our services</h2>
-    <p  class="margin_help_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elit tortor. 
-      Quisque bibendum mauris velit easely documented
-    </p>
-
-    <div class="all_coding">
-      <div class="flex_coding">
-        <div class="sdvig_coding">
-          <img src="img/coding.png" alt="coding">
-          <p>coding</p>
-        </div>
-        <div class="sdvig_coding">
-          <img src="img/coding.png" alt="coding">
-          <p>coding</p>
-        </div>
-        <div class="sdvig_coding">
-          <img src="img/coding.png" alt="coding">
-          <p>coding</p>
-        </div>
-      </div>
-      <div class="flex_coding">
-        <div class="sdvig_coding">
-          <img src="img/coding.png" alt="coding">
-          <p>coding</p>
-        </div>
-        <div class="sdvig_coding">
-          <img src="img/coding.png" alt="coding">
-          <p>coding</p>
-        </div>
-        <div class="sdvig_coding">
-          <img src="img/coding.png" alt="coding">
-          <p>coding</p>
-        </div>
-      </div>
+    <div class="col block_color text-center">
+      OUR SERVICES
     </div>
-
-    <button>learn more &#8594;</button>
-  </div>
-
-  <div class="three_list_right">
-    <img src="img/list_three.png" alt="#">
-  </div>
-
- </section>
-<!--Четвертая СЕКЦИЯ НАЧАЛО ********************************************************************************************-->
- <section class="foo_list">
-
-  <div class="foo_list_top">
-    <div class="foo_logo">
-      <img src="img/logo_foo.png" alt="logo">
+    <div class="col block_color text-center">
+      PORTFOLIO
     </div>
-    <div>
-      <h4>Our portfolio</h4>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed elit tortor. 
-        Quisque bibendum mauris velit easely documented
-      </p>
+    <div class="col block_color text-center">
+      EXPERIENCE
     </div>
-  </div>
-  <div class="work_one">
-    <img src="img/work_one.png" alt="">
-  </div>
-
-  <div class="work_bottom">
-    <div class="work_left">
-      <div class="work_left_bottom">
-        <div><img src="img/work_two.png" alt="portfolio"></div>
-        <div><img src="img/work_two.png" alt="portfolio"></div>
-      </div>
-      <div class="work_right_bottom">
-        <div><img src="img/work_two.png" alt="portfolio"></div>
-        <div><img src="img/work_two.png" alt="portfolio"></div>
-      </div>
+    <div class="col block_color text-center">
+      BLOG
     </div>
-    <div class="work_right">
-      <img src="img/work_three.png" alt="portfolio">
+    <div class="col block_color text-center">
+      CONTACT
     </div>
+    
   </div>
+</div>
 
- </section>
 
- <section class="contact_list">
 
-  <div class="form_contact">
-    <h5>Say hello</h5>
-    <form action="#" method="post">
-      <input type="text" placeholder="Name">
-      <input type="text" placeholder="email">
-      <input type="text" placeholder="message">
-      <button>send message</button>
-    </form>
-  </div>
 
-  <div class="div_contact">
-    <a href="tel:8 999 999 999 9">
-      <p><img src="img/tel.png" alt="telephon">+ (999) 99 99 99 9</p>
-    </a>
-    <a href="mailto:cool@aboba.ru">
-      <p><img src="img/email.png" alt="email">ouremail@emai.com</p>
-    </a>
-    <a href="#">
-      <p><img src="img/geo.png" alt="addres">BRD, Berlin, str. Gete 5</p>
-    </a>
-  </div>
 
- </section>
 
-</main>
 
-<footer>
-  <div><img src="img/logo_footer.png" alt="logo"></div>
-  <p>Copyright 2022, BRD, Berlin, str. Gete 5  </p>
-</footer>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
 
