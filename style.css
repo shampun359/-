@@ -1,17 +1,46 @@
 body, html {
     margin: 0;
     padding: 0;
+    min-width: 380px;
 }
 
-.row_color{
-    background-color: aquamarine;
-    border: solid black 3px;
+header{
+    color: white;
+    font-weight: bold;
 }
 
-.block_color{
-    background-color: red;
-    border: solid black 1px;
-}
-.ggg{
+.div_header{
     max-width: 1650px;
+    background-color: #15263e;
+    padding: 25px 0 25px 0;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+header a:hover {
+    color: #ad19ee;
+}
+
+
+.services{
+    margin-top: 100px;
+}
+h2{
+    font-size: 50px !important;
+}
+.services_text_bold{
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+
+
+
+
+@media (max-width: 550px){
+    .header_a{
+       font-size: 12px;
+    }
 }
