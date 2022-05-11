@@ -1,0 +1,7 @@
+User-agent: YandexBot
+Host: https://www.ritualbalakovo.ru/
+Sitemap: https://www.ritualbalakovo.ru/Sitemap.txt
+User-agent: Googlebot
+Sitemap: https://www.ritualbalakovo.ru/Sitemap.txt
+User-agent: *
+Sitemap: https://www.ritualbalakovo.ru/Sitemap.txt

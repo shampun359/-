@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #04051a;
+    color: white;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x:hidden;
+    min-width: 360px;
+}
+a:hover{
+    color: #fffccf;
+}
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+main {
+   
+    padding-top: 21px;
+}
+.header_top{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+}
+
+header div div {
+    display: flex;
+}
+header div div a{
+    text-decoration: none;
+}
+header div div p {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 13px;
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.header_number a{
+    font-size: 35px;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+}
+.geo {
+    padding-left: 5px;
+    max-width: 32px;
+    max-height: 49px;
+    padding-top: 5px;
+}
+/* header end */
+/* Левый блок */
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+.contract{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.contract_left{
+    max-width: 550px;
+}
+.contract_left p {
+    font-size: 19px;
+    line-height: 30px;
+}
+.contract_right img{
+   max-width: 600px;
+   max-height: 370px;
+   border-radius: 50px 50px 50px 50px;
+}
+
+.contacn_a {
+    margin-top: 75px;
+	background-color:#ffffd3;
+	border-radius:10px;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:25px;
+	padding:10px 50px;
+	text-decoration:none;
+}
+.contacn_a:hover{
+    color: black;
+    -webkit-box-shadow: 4px 4px 75px 35px rgba(255, 255, 211, 0.79);
+-moz-box-shadow: 4px 4px 75px 35px rgba(255, 255, 211, 0.79);
+box-shadow: 4px 4px 75px 35px rgba(255, 255, 211, 0.79);
+}
+
+.contacn_a:active {
+    -webkit-box-shadow: 4px 4px 75px 35px rgba(255, 255, 211, 0.79);
+-moz-box-shadow: 4px 4px 75px 35px rgba(255, 255, 211, 0.79);
+box-shadow: 4px 4px 75px 35px rgba(255, 255, 211, 0.79);
+}
+      
+
+
+
+/* Подвал */
+footer{
+    margin: 200px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_contact{
+    font-size: 25px;
+    font-weight: 300;
+}
+.footer_contact a {
+   text-decoration: none; 
+}
+
+.footer_logo {
+    text-align: end;
+}
+.footer_logo p {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+@media (max-width:1280px){
+    .footer_logo p {
+        font-size: 18px;
+    }
+    
+    .footer_contact{
+        font-size: 18px;
+    }
+    .contract_left p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1180px){
+    .contract_left p {
+        font-size: 16px;
+    }
+    .contract_right img{
+        max-width: 450px;
+        max-height: 300px;
+        
+     }
+}
+
+@media (max-width:1024px){
+    .contract_right img{
+        max-width: 450px;
+        max-height: 300px;
+     }
+     .contract {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacn_a {
+        margin-left: 19%;
+    }
+}
+
+@media (max-width:830px){
+    footer{
+        margin: 100px 0 20px 0;
+        display: block;
+        text-align: -webkit-center;
+    }
+    .footer_contact{
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+    
+    .footer_logo {
+        text-align: center;
+    }
+    .footer_logo p {
+        font-size: 16px;
+    }
+}
+
+
+
+
+
+
