@@ -58,6 +58,7 @@ header div div p {
 h1{
     text-align: center;
     margin-top: 100px;
+    font-size: 40px;
 }
 .contract{
     display: flex;
@@ -102,7 +103,38 @@ box-shadow: 4px 4px 75px 35px rgba(255, 255, 211, 0.79);
 box-shadow: 4px 4px 75px 35px rgba(255, 255, 211, 0.79);
 }
       
-
+.contract_info  {
+    padding-top: 150px;
+    max-width: 1100px;
+    margin: auto;
+    width: 90%;
+}
+h2 {
+    font-size: 36px;
+}
+.contract_info ul  {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    font-size: 22px;
+}
+.contract_info ul li {
+    margin-bottom: 30px;
+}
+.contract_contact{
+    margin-top: 200px;
+}
+h3{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+.contract_contact div {
+    text-align: center;
+}
+.contract_contact a {
+    text-decoration: none;
+    font-size: 30px;
+}
 
 
 /* Подвал */
@@ -137,11 +169,13 @@ footer{
     .footer_logo p {
         font-size: 18px;
     }
-    
     .footer_contact{
         font-size: 18px;
     }
     .contract_left p {
+        font-size: 18px;
+    }
+    .contract_info ul  {
         font-size: 18px;
     }
 }
@@ -158,6 +192,9 @@ footer{
 }
 
 @media (max-width:1024px){
+    .header_top{
+        width: 100%;
+    }
     .contract_right img{
         max-width: 450px;
         max-height: 300px;
@@ -168,6 +205,13 @@ footer{
     }
     .contacn_a {
         margin-left: 19%;
+        margin-bottom: 75px;
+    }
+    header div div p {
+        font-size: 18px;
+    }
+    .header_number a {
+        font-size: 30px;
     }
 }
 
@@ -181,16 +225,42 @@ footer{
         font-size: 16px;
         margin-bottom: 25px;
     }
-    
     .footer_logo {
         text-align: center;
     }
     .footer_logo p {
         font-size: 16px;
     }
+    h2 {
+        font-size: 24px;
+    }
+    .contract_info ul  {
+        font-size: 14px;
+    }
 }
-
-
+@media (max-width:830px){
+    h1 {
+        font-size: 24px;
+    }
+    .contract_left p {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+@media (max-width:500px){
+    .contacn_a {
+        display: block;
+        margin-bottom: 100px;
+        text-align: center;
+        margin-left: 0%;
+    }
+    .header div div p {
+        font-size: 15px;
+    }
+    .header_number a {
+        font-size: 25px;
+    }
+}
 
 
 
