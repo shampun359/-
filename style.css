@@ -1,0 +1,63 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    
+    
+}
+main{
+    margin-left: 500px;
+    margin-top: 180px;
+    max-width: 858px;
+}
+.block_avtor{
+    display: flex;
+    margin-left: 22px;
+}
+.poloski{
+    display: flex;
+    justify-content: space-around;
+}
+.info{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    width: 235px;
+    height: 60px;
+}
+.number_one{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 22px;
+
+}
+.document{
+    font-size: 14px;
+    font-weight: normal;
+}
+.otchet{
+    font-size: 14px;
+    font-weight: normal;
+}
+span{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+}
+.avtor{
+    margin-left: 31px;
+}
+
+
+
+
+
+
+
+
+
+.progress_one {
+	background-color: #f3f3f3;
+	border: 0;
+	height: 18px;
+	border-radius: 9px;
+}
