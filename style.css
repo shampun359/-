@@ -1,0 +1,6 @@
+/* Список переменных */
+:root{
+    --lora: 'Lora', serif; /*Шрифт lora*/
+    --roboto: 'Roboto', sans-serif; /*Шрифт roboto*/
+    --roboto-c: 'Roboto Condensed', sans-serif; /*Шрифт roboto Condensed*/
+}
