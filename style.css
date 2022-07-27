@@ -1,6 +1,199 @@
-/* Список переменных */
-:root{
+@font-face { /* Шрифт Myriad Pro*/
+    font-family: 'Myriad Pro';
+    src: url('font/MyriadPro-Regular.eot');
+    src: local('font/Myriad Pro Regular'), local('MyriadPro-Regular'),
+        url('font/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/MyriadPro-Regular.woff2') format('woff2'),
+        url('font/MyriadPro-Regular.woff') format('woff'),
+        url('font/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{ /* Список переменных */
+    --myriad-pro : 'Myriad Pro'; /* Шрифт Myriad Pro*/
     --lora: 'Lora', serif; /*Шрифт lora*/
     --roboto: 'Roboto', sans-serif; /*Шрифт roboto*/
     --roboto-c: 'Roboto Condensed', sans-serif; /*Шрифт roboto Condensed*/
+    --brend-color: #000d2b;
+    --color_logo: #fffed0;
+    --max-widht-cont: 1480px;
+}
+
+/* Список дефолтных правил */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    font-family: var(--roboto);
+    min-width: 360px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* Header ***********************************************/
+header{
+    background-color: var(--brend-color);
+}
+.header_flex{
+    max-width: var(--max-widht-cont);
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.ritual{
+    text-transform: uppercase;
+    color: var(--color_logo);
+    font-size: 62.55px;
+    margin: 21px 0 9px 16px;
+    font-family: var(--myriad-pro);
+}
+.header_tel{
+    padding-right: 65px;
+    font-size: 50px;
+    font-family: var(--roboto);
+    color: var(--color_logo);
+    margin: 29px 0 9px 0;
+    font-weight: lighter;
+}
+.header_left{
+    display: flex;
+}
+/* Navigation*******************************************/
+
+.nav_header{
+    max-width: var(--max-widht-cont);
+    text-align: center;
+    margin: auto;
+}
+
+
+
+
+
+
+/*бургер меню**********************************************/
+.menu-btn{
+    display: none;
+    width: 30px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 50px;
+}
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+/* Меняем гамбургер иконку, когда меню открыто */
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+}
+  .menu-btn.active span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);  
+}
+  .menu-btn.active span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg); 
+}
+/*бургер меню конец************************************/
+
+
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+}
+.menu li{
+    font-size: calc(16px + 9 * (100vw / 1920));
+    text-transform: uppercase;
+    margin-top: 17px;
+}
+.menu li a{
+    color: black;
+}
+
+.menu li + li:before{ /* focus | */
+    content:"|";
+    margin-right: 15px;
+    margin-left: 15px;
+} 
+
+
+
+
+
+@media (max-width: 1280px){
+    .menu li{
+        font-size: 18px;
+    }
+    .ritual{
+        font-size: 58px;
+    }
+    .header_tel{
+        font-size: 46px;
+    }
+    /*Бургер  меню**********/
+    .menu-btn{
+        display: block;
+    }
+    .menu {
+       display: none;
+    }
+    .menu.active {
+        display: block;;
+        transition-duration: 4s;
+    }
+    .menu {
+        flex-direction: column;
+    }
+    .menu li + li:before{ /* focus | */
+        content:" ";
+        margin-right: 0px;
+        margin-left: 0px;
+    } 
+    /*Бургер  меню конец**********/
+}
+@media (max-width: 860px){
+    .ritual {
+        font-size: calc(28px + 30 * (100vw / 1920));
+    }
+    .header_tel {
+        padding-right: 20px;
+        font-size: calc(20px + 26 * (100vw / 1920));
+    }
+}
+@media (max-width: 540px){
+    .ritual {
+        font-size: calc(22px + 14 * (100vw / 1920));
+        margin: 27px 0 9px 16px;
+    }
+    .header_tel {
+        font-size: calc(18px + 9 * (100vw / 1920));
+    }
 }
