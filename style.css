@@ -53,7 +53,7 @@ header{
     font-family: var(--myriad-pro);
 }
 .header_tel{
-    padding-right: 65px;
+    padding-right: 34px;
     font-size: 50px;
     font-family: var(--roboto);
     color: var(--color_logo);
@@ -139,13 +139,13 @@ header{
     margin-right: -196px;
 }
 h1 {
-    font-size: 70px;
+    font-size: calc(40px + 30 * (100vw / 1920));
     font-family: var(--lora);
     line-height: 80px;
     font-weight: 400;
 }
 .one_left p {
-    font-size: 27px;
+    font-size: calc(20px + 7 * (100vw / 1920));
     line-height: 34pt;
     margin-top: 60px;
 }
@@ -153,6 +153,15 @@ h1 {
     margin-top: 160px;
     font-family: var(--roboto-c);
     font-weight: 300;
+    font-size: calc(16px + 11 * (100vw / 1920));
+    padding-top: 50px;
+}
+.one_right{
+    max-width: 1096px;
+}
+.one_right img {
+    width: 100%;
+    
 }
 
 
@@ -217,6 +226,14 @@ h1 {
         margin-left: 0px;
     } 
     /*Бургер  меню конец**********/
+    /* первый лист*/
+    .one_left {
+        margin-top: 0px;
+    }
+    .one_list {
+        margin-left: 17px;
+    }
+
 }
 @media (max-width: 860px){
     .ritual {
