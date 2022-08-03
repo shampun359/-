@@ -227,14 +227,15 @@ h3{
 }
 .three_list_bottom{
     margin-top: 190px;
-    
+    display: flex;
 }
-
-
+.three_h{
+    margin-left: 10%;
+}
 /*слайдер*/
 .slider_header{
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: calc(29px + 7 * (100vw / 1920));
     border-bottom: 1px solid #000000;
     max-width: 352px;
 }
@@ -242,15 +243,98 @@ h3{
     font-size: calc(16px + 11 * (100vw / 1920));
     margin-top: 70px;
 }
+.slider_block{
+    margin-left: 9%;
+}
+.slider_flex {
+    display: flex;
+}
+.fa{
+    font-size: 81px !important; 
+    margin: auto;
+    padding-left: 107px;
+}
+.slider_but{
+    margin-top: 70px;
+    margin-left: 17%;
+}
+.slider_but a{
+    text-decoration:none; 
+    text-align:center; 
+    padding: 9px 76px;
+    border:solid 1px #000000; 	 				 
+    border-radius: 10px; 									
+    font-size: 27px;
+    font-weight: 300; 
+    color:#000000; 
+    background:#ffffff; 
+}
+.slide_two{
+    max-width: 483px;
+}
+.slide_three{
+    max-width: 438px;
+}
+.slide_foo{
+    max-width: 299px;
+}
+/* Анимация слайдов 
+.item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}*/
 
-
-
-
-
-
-
-
-
+/*Третий  лист  конец*/
+.foo_list{
+    margin-top: 160px;
+    
+}
+.skammer {
+    max-width: 1540px;
+    padding-top: 55px;
+    padding-bottom: 70px;
+    background-color: var(--brend-color);
+    margin: auto;
+    text-align: center;
+}
+.skammer p{
+    font-size: calc(24px + 46 * (100vw / 1920));
+    color: white;
+    font-family: var(--lora);
+}
+.skammer ul{
+    color: white;
+    max-width: 1272px;
+    margin: auto;
+    text-align: justify;
+    padding-top: 70px;
+}
+.skammer ul li{
+    font-size: calc(12px + 13 * (100vw / 1920));
+    font-weight: 200;
+    line-height: 47px;
+}
+.skammer ul li::before{
+    content: "• ";
+}
 
 
 
@@ -308,6 +392,37 @@ h3{
     .three_list_top p {
         margin-top: 30px;
     }
+    .three_list_bottom {
+        flex-direction: column;
+    }
+    .three_h {
+        margin: auto;
+    }
+    .slider_block {
+        margin-left: 17px;
+    }
+    .slider_header {
+        margin: auto;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .fa {
+         padding-left: 0; 
+    }
+    .slider_but {
+        margin-left: 0;
+        text-align: center;
+    }
+    .slider_flex {
+        flex-direction: column-reverse;
+    }
+    .slider_content {
+        margin: auto;
+        text-align: center;
+    }
+    .skammer ul {
+        margin: 0 5% 0 5%;
+    }
 }
 @media (max-width: 860px){
     .ritual {
@@ -335,3 +450,18 @@ h3{
         font-size: calc(18px + 9 * (100vw / 1920));
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
