@@ -36,3 +36,23 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     
 }
+
+
+// Выпадающий  цвет и поворот svg картинки
+
+function lunge(enter) { 
+    document.querySelector('#secret_text_' + enter).classList.toggle('no_sicret_text'); // добавляем/удаляем исчезновение текста
+    document.querySelector('#img_secret_' + enter).classList.toggle('img_secret');   // поворот картинки
+}
+
+function hooked(i) {// Меняем цвет картинки  при наведение
+    document.querySelector('#svg_ellipse_' + i).classList.add('css_ellipse_hover');
+    document.querySelector('#svg_plus_' + i).classList.add('css_plus_hover');
+}
+
+function distracted(i) {// Меняем цвет картинки  при отведение
+    document.querySelector('#svg_ellipse_' + i).classList.remove('css_ellipse_hover');
+    document.querySelector('#svg_plus_' + i).classList.remove('css_plus_hover');
+}
+
+
