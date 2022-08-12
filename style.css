@@ -27,6 +27,7 @@
 body{
     font-family: var(--roboto);
     min-width: 360px;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -362,10 +363,6 @@ h4{
     justify-content: space-between;
     cursor: pointer;
 }
-.questions p:focus, .questions p:hover, .questions p:active{
-    color: var(--brend-color);
-    border-bottom: 2px groove var(--brend-color);
-}
 .img_secret{
     transform: rotate(45deg);
     transition: 1s;
@@ -382,6 +379,7 @@ h4{
     line-height: 32px;
     opacity: 0;
     animation: secrettext 2s forwards;
+    border-top: 2px groove var(--brend-color);
 }
 @keyframes  secrettext{
     0% {opacity: 0;}
@@ -448,6 +446,10 @@ h4{
     }
     .one_list {
         margin-left: 17px;
+        display: block;
+    }
+    .one_right img {
+        margin-left: 6.5%;
     }
     /*второй лист*/
     .our_top, .three_list_top{
@@ -512,22 +514,33 @@ h4{
     .three_list_top p{
         margin-left: 0;
     }
+    .one_left {
+        margin-right: 0px; 
+    }
     
 }
 @media (max-width: 540px){
     .ritual {
         font-size: calc(22px + 14 * (100vw / 1920));
-        margin: 27px 0 9px 16px;
+        margin: 27px 0 9px 0px;
+
     }
     .header_tel {
         font-size: calc(18px + 9 * (100vw / 1920));
+        padding-right: 0px;
+        padding-top: 3px;
     }
     .our_buttom {
         margin-left: 5px;
         margin-right: 5px;
     }
+    .one_address {
+        padding-top: 0px; 
+    }
+    h1 {
+        font-size: calc(30px + 40 * (100vw / 1920));
+    }
 }
-
 
 
 
