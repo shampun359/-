@@ -15,7 +15,6 @@ showSlides(slideIndex);
 /* Функция увеличивает индекс на 1, показывает следующй слайд*/
 function plusSlide() {
     showSlides(slideIndex += 1);
-    
 }
 
 /* Основная функция слайдера */

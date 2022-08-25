@@ -138,6 +138,7 @@ header{
     margin-top: 120px;
     max-width: 770px;
     margin-right: -196px;
+    margin-left: 31px;
 }
 h1 {
     font-size: calc(40px + 30 * (100vw / 1920));
@@ -269,6 +270,18 @@ h3{
     font-weight: 300; 
     color:#000000; 
     background:#ffffff; 
+}
+.slider_but a:hover{
+    background-color: var(--brend-color);
+    color: #ffffff;
+}
+.slider_but a:focus{
+    background-color: var(--brend-color);
+    color: #ffffff;
+}
+.slider_but a:active{
+    background-color: var(--brend-color);
+    color: #ffffff;
 }
 .slide_two{
     max-width: 483px;
@@ -442,14 +455,11 @@ h4{
     /*Бургер  меню конец**********/
     /* первый лист*/
     .one_left {
-        margin-top: 0px;
+        margin: auto;
     }
     .one_list {
         margin-left: 17px;
         display: block;
-    }
-    .one_right img {
-        margin-left: 6.5%;
     }
     /*второй лист*/
     .our_top, .three_list_top{
