@@ -41,7 +41,7 @@ header{
     background-color: var(--brend-color);
 }
 .header_flex{
-    max-width: var(--max-widht-cont);
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -54,7 +54,7 @@ header{
     font-family: var(--lora);
 }
 .header_tel{
-    padding-right: 50px;
+    padding-right: 15px;
     font-size: 50px;
     font-family: var(--roboto);
     color: var(--color_logo);
@@ -126,7 +126,10 @@ header{
     content:"|";
     margin-right: 15px;
     margin-left: 15px;
-} 
+}
+.menu li a:hover,.menu li a:active,menu li a:focus{
+    border-bottom: 3px var(--brend-color) solid;
+}
 
 /*Хедер конец  ************************************/
 
@@ -230,9 +233,10 @@ h3{
 .three_list_bottom{
     margin-top: 190px;
     display: flex;
-}
-.three_h{
-    margin-left: 10%;
+
+    max-width: 1500px;
+    justify-content: center
+
 }
 /*слайдер*/
 .slider_header{
@@ -411,8 +415,24 @@ h4{
     fill: #FFFFFF;
 }
 
-
-
+/*5 лист конец  ************************************/
+.map{
+    max-width: var(--max-widht-cont);
+    display: flex;
+    margin: auto;
+    padding-top: 200px;
+}
+.box_map_contact{
+    font-family: var(--roboto);
+    line-height: 38px;
+    margin-top: 15px;
+    margin-left: 80px;
+    font-size: calc(23px + 4 * (100vw / 1920));
+}
+.box_map{
+   max-width: 737px;
+   width: 85%;
+}
 
 
 
@@ -508,6 +528,19 @@ h4{
         margin-left: 5%;
         margin-right: 5%;
     }
+    /*Карта начало*/
+    .map {
+        flex-direction: column;
+        align-items: center;
+    }
+    .box_map_contact {
+        margin-top: 100px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .box_map {
+        left: 4.5%;
+    }
 }
 @media (max-width: 860px){
     .ritual {
@@ -537,7 +570,7 @@ h4{
     }
     .header_tel {
         font-size: calc(18px + 9 * (100vw / 1920));
-        padding-right: 0px;
+        padding-right: 10px;
         padding-top: 3px;
     }
     .our_buttom {
