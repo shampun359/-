@@ -215,10 +215,11 @@ h2{
    margin-top: 200px; 
 }
 .three_list_top{
-    display: flex;
     justify-content: center;
 }
 h3{
+    max-width: 1320px;
+    margin: auto;
     font-family: var(--lora);
     font-size: calc(37px + 33 * (100vw / 1920));
     font-weight: 400;
@@ -228,15 +229,13 @@ h3{
     font-size: calc(16px + 11 * (100vw / 1920));
     line-height: 34px;
     max-width: 893px;
-    margin-left: 50px;
+    margin-left: 43vw;
 }
 .three_list_bottom{
     margin-top: 190px;
-    display: flex;
-
-    max-width: 1500px;
-    justify-content: center
-
+    justify-content: center;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 /*слайдер*/
 .slider_header{
@@ -250,7 +249,7 @@ h3{
     margin-top: 70px;
 }
 .slider_block{
-    margin-left: 9%;
+    margin-left: 42vw;
 }
 .slider_flex {
     display: flex;
@@ -258,11 +257,9 @@ h3{
 .fa{
     font-size: 81px !important; 
     margin: auto;
-    padding-left: 107px;
 }
 .slider_but{
     margin-top: 70px;
-    margin-left: 17%;
 }
 .slider_but a{
     text-decoration:none; 
