@@ -457,7 +457,8 @@ footer{
 .menu_footer li a{ 
     color: #ECECEC;
     font-family: var(--roboto);
-    font-size: calc(12px + 14 * (100vw / 1920));
+    font-size: calc(18px + 8 * (100vw / 1920));
+    font-weight: 300;
 }
 .menu_footer li + li:before{ /* focus | */
     content:"|";
@@ -575,6 +576,20 @@ footer{
     .box_map {
         left: 4.5%;
     }
+    /*FOOTER*/
+    .footer_div, .menu_footer{
+        display: grid;
+        justify-content: center;
+    }
+    .menu_footer li + li:before{ /* focus | */
+        content:" ";
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .menu_footer{
+        margin-left: 0px;
+        text-align: center;
+    }
 }
 @media (max-width: 860px){
     .ritual {
@@ -595,12 +610,12 @@ footer{
         margin-right: 0px; 
     }
     
+    
 }
 @media (max-width: 540px){
     .ritual {
         font-size: calc(22px + 14 * (100vw / 1920));
         margin: 27px 0 9px 0px;
-
     }
     .header_tel {
         font-size: calc(18px + 9 * (100vw / 1920));
@@ -617,6 +632,7 @@ footer{
     h1 {
         font-size: calc(30px + 40 * (100vw / 1920));
     }
+    
 }
 
 
