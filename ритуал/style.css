@@ -45,6 +45,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin: auto;
+    padding-top: 15px;
 }
 .ritual{
     text-transform: uppercase;
@@ -430,7 +431,43 @@ h4{
    max-width: 737px;
    width: 85%;
 }
-
+/*FOOTER*/
+footer{
+    background-color: var(--brend-color);
+    margin-top: 100px;
+}
+.ritual_footer{
+    text-transform: uppercase;
+    color: var(--color_logo);
+    font-size: 38px;
+    margin: 21px 0 9px 16px;
+    font-family: var(--lora);
+}
+.footer_div{
+    max-width: 1480px;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+}
+.menu_footer{
+    display: flex;
+    padding-top: 35px;
+    margin-left: 40px;
+}
+.menu_footer li a{ 
+    color: #ECECEC;
+    font-family: var(--roboto);
+    font-size: calc(12px + 14 * (100vw / 1920));
+}
+.menu_footer li + li:before{ /* focus | */
+    content:"|";
+    margin-right: 15px;
+    margin-left: 15px;
+    color: #ECECEC;
+}
+.menu_footer li a:hover,.menu_footer li a:active,.menu_footer li a:focus{
+    color: var(--color_logo)
+}
 
 
 
