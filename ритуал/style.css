@@ -440,6 +440,7 @@ h4{
 footer{
     background-color: var(--brend-color);
     margin-top: 100px;
+    padding-bottom: 30px;
 }
 .ritual_footer{
     text-transform: uppercase;
@@ -474,6 +475,12 @@ footer{
 .menu_footer li a:hover,.menu_footer li a:active,.menu_footer li a:focus{
     color: var(--color_logo)
 }
+.avtor{
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    display: none;
+}
 
 
 
@@ -492,6 +499,9 @@ footer{
     }
     .header_tel{
         font-size: 46px;
+    }
+    .header_flex {
+        justify-content: space-around;
     }
     /*Бургер  меню**********/
     .menu-btn{
@@ -521,6 +531,7 @@ footer{
         margin-left: 17px;
         display: block;
     }
+
 
     /*второй лист*/
     .our_top, .three_list_top{
@@ -626,7 +637,11 @@ footer{
 @media (max-width: 540px){
     .ritual {
         font-size: calc(22px + 14 * (100vw / 1920));
-        margin: 27px 0 9px 0px;
+        margin: 27px 0 9px 9px;
+    }
+    .div_logo_header img{
+        width: 29px;
+        height: 52px
     }
     .header_tel {
         font-size: calc(18px + 9 * (100vw / 1920));
