@@ -1,0 +1,18 @@
+:root{ /* Список переменных */
+    --myriad-pro : 'Myriad Pro'; /* Шрифт Myriad Pro*/
+    --lora: 'Lora', serif; /*Шрифт lora*/
+    --roboto: 'Roboto', sans-serif; /*Шрифт roboto*/
+    --roboto-c: 'Roboto Condensed', sans-serif; /*Шрифт roboto Condensed*/
+    --brend-color: #000d2b;
+    --color_logo: #fffed0;
+    --max-widht-cont: 1480px;
+}
+
+.header_contract{
+    margin-top: 145px;
+    font-family: var(--lora);
+    text-align: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
