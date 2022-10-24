@@ -21,10 +21,21 @@
     justify-content: end;
     font-weight: 300;
     line-height: 30px;
+    margin-left: 7vw;
 }
 .trans_text{
     padding-top: 130px;
 }
 .trans_text p:nth-child(2){
     padding-top: 70px;
+}
+.tran_avto img{
+    width: 100%;
+}
+
+
+@media(max-width: 860px){
+    .tran_avto img{
+        display: none;
+    }
 }
