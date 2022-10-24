@@ -1,0 +1,30 @@
+:root{ /* Список переменных */
+    --myriad-pro : 'Myriad Pro'; /* Шрифт Myriad Pro*/
+    --lora: 'Lora', serif; /*Шрифт lora*/
+    --roboto: 'Roboto', sans-serif; /*Шрифт roboto*/
+    --roboto-c: 'Roboto Condensed', sans-serif; /*Шрифт roboto Condensed*/
+    --brend-color: #000d2b;
+    --color_logo: #fffed0;
+    --max-widht-cont: 1480px;
+}
+.trans_header{
+    margin-top: 145px;
+    font-family: var(--lora);
+    text-align: center;
+    font-size: calc(16px + 16 * (100vw / 1920));
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.trans_content{
+    display: flex;
+    font-size: calc(18px + 6 * (100vw / 1920));
+    justify-content: end;
+    font-weight: 300;
+    line-height: 30px;
+}
+.trans_text{
+    padding-top: 130px;
+}
+.trans_text p:nth-child(2){
+    padding-top: 70px;
+}
