@@ -20,9 +20,9 @@
     display: flex;
     justify-content: space-evenly;
     padding-top: 160px;
-    font-size: 24px;
+    font-size: calc(18px + 6 * (100vw / 1920));
     max-width: 1480px;
-    margin: auto;
+    margin-left: 13vw;
 }
 .contract_div p{
     padding: 55px 0 0 84px;
@@ -38,3 +38,17 @@
     max-width: 100%;
 }
 
+@media(max-width: 1280px){
+    .contract_div{
+    margin-left: 5vw;
+    }
+}
+
+@media(max-width: 860px){
+    .contract_div{
+        flex-direction: column;    
+    }
+    .contract_div p{
+        margin: 50px;
+    }
+}
