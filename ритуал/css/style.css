@@ -633,6 +633,9 @@ footer{
     .header_flex {
         justify-content: space-around;
     }
+    .our_buttom {
+        margin-top: 90px;
+    }
     
     
 }
@@ -653,6 +656,7 @@ footer{
     .our_buttom {
         margin-left: 5px;
         margin-right: 5px;
+        margin-top: 65px;
     }
     .one_address {
         padding-top: 0px; 

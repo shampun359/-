@@ -93,6 +93,7 @@
     }
     .brigada{
         margin-inline: 3vw;
+        display: block;
     }
     .funeral_text{
         margin-inline: 3vw;
@@ -109,7 +110,7 @@
 }
 @media (max-width: 540px){
     .f_container p:nth-child(2){
-        padding: 0 0 40px 120px;
+        padding: 0 0 120px 120px;
     }
     .f_container p:nth-child(3){
         padding: 0 0 40px 120px;
@@ -125,5 +126,8 @@
     }
     .brigada div{
         margin: auto;
+    }
+    .f_container {
+        margin-inline-end: 7vw;
     }
 }
