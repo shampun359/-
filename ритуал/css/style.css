@@ -463,7 +463,7 @@ footer{
 .menu_footer li a{ 
     color: #ECECEC;
     font-family: var(--roboto);
-    font-size: calc(18px + 8 * (100vw / 1920));
+    font-size: calc(18px + 4 * (100vw / 1920));
     font-weight: 300;
 }
 .menu_footer li + li:before{ /* focus | */
@@ -531,7 +531,9 @@ footer{
         margin-left: 17px;
         display: block;
     }
-
+    .one_right {
+        display: contents;
+      }
 
     /*второй лист*/
     .our_top, .three_list_top{
