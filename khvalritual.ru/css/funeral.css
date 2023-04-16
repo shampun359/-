@@ -1,0 +1,141 @@
+:root{ /* Список переменных */
+    --myriad-pro : 'Myriad Pro'; /* Шрифт Myriad Pro*/
+    --lora: 'Lora', serif; /*Шрифт lora*/
+    --roboto: 'Roboto', sans-serif; /*Шрифт roboto*/
+    --roboto-c: 'Roboto Condensed', sans-serif; /*Шрифт roboto Condensed*/
+    --brend-color: #000d2b;
+    --color_logo: #fffed0;
+    --max-widht-cont: 1480px;
+}
+
+.funeral_header{
+    margin-top: 145px;
+    font-family: var(--lora);
+    text-align: center;
+    font-size: calc(16px + 16 * (100vw / 1920));
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.f_border_text{
+    font-family: var(--roboto);
+    font-size: calc(16px + 10 * (100vw / 1920));
+    font-weight: 300;
+    border: 1px solid ;
+    border-radius: 10px;
+    max-width: 1250px;
+    text-align: center;
+    margin: auto;
+    padding: 10px 0 10px 0;
+}
+.f_container{
+    max-width: var(--max-widht-cont);
+    font-family: var(--roboto);
+    font-size: calc(16px + 10 * (100vw / 1920));
+    margin: auto;
+    font-weight: 300;
+    margin-top: 150px;
+}
+.f_container p{
+    margin-left: 40px;
+}
+.f_container p:nth-child(2){
+    margin-top: 80px;
+    background: url(../img/one_f.png) no-repeat;
+    padding: 30px 0 40px 120px;
+}
+.f_container p:nth-child(3){
+    margin-top: 75px;
+    background: url(../img/two_f.png) no-repeat;
+    padding: 30px 0 40px 120px;
+}
+.f_container p:nth-child(4){
+    margin-top: 80px;
+}
+.f_container p:nth-child(5){
+    margin-top: 75px;
+    background: url(../img/three_f.png) no-repeat;
+    padding: 51px 0 40px 120px;
+}
+.f_container p:nth-child(6){
+    margin-top: 100px;
+}
+.brigada_fon{
+    background-color: var(--brend-color);
+    color: white;
+    margin-top: 150px;
+}
+.brigada{
+    max-width: var(--max-widht-cont);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: calc(16px + 10 * (100vw / 1920));
+    font-weight: 300;
+    margin: auto;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 140px;
+    padding-bottom: 75px;
+}
+.brigada p{
+    padding-top: 25px;
+}
+.funeral_text{
+    padding-top: 180px;
+    max-width: var(--max-widht-cont);
+    margin: auto;
+    font-size: calc(16px + 10 * (100vw / 1920));
+    font-weight: 300;
+    padding-bottom: 200px;
+}
+
+@media(max-width: 1280px){
+    .f_border_text{
+        margin-inline: 3vw;
+    }
+    .brigada{
+        margin-inline: 3vw;
+        display: block;
+    }
+    .funeral_text{
+        margin-inline: 3vw;
+    }
+
+}
+@media(max-width: 960px){
+    .brigada p {
+        padding-top: 0px; 
+    }
+    .f_container p:nth-child(5){
+        padding: 62px 0 40px 120px;
+    }
+}
+@media (max-width: 540px){
+    .f_container p:nth-child(2){
+        padding: 0 0 120px 120px;
+    }
+    .f_container p:nth-child(3){
+        padding: 0 0 40px 120px;
+    }
+    .f_container p:nth-child(4){
+        margin-top: 80px;
+    }
+    .f_container p:nth-child(5){
+        padding: 45px 0 40px 120px;
+    }
+    .brigada{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column; 
+    }
+    .brigada div{
+        margin: auto;
+    }
+    .f_container {
+        -webkit-margin-end: 7vw;
+        margin-inline-end: 7vw;
+    }
+}
