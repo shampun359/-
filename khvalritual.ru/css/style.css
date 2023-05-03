@@ -287,6 +287,7 @@ h2{
 .shop_left p{
     font-size: calc(24px + 20 * (100vw / 1920));
     margin-top: 60px;
+    font-weight: 700;
 }
 .shop_left ul{
     padding: 40px  0 40px  0;
@@ -555,7 +556,7 @@ h4{
 /*FOOTER*/
 footer{
     background-color: var(--brend-color);
-    margin-top: 100px;
+    margin-top: 130px;
     padding-bottom: 30px;
 }
 .ritual_footer{
@@ -572,6 +573,7 @@ footer{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
 }
 .menu_footer{
     display: -webkit-box;
@@ -599,7 +601,10 @@ footer{
     color: #ffffff;
     text-align: center;
     font-size: 18px;
-    display: none;
+    margin-top: 17px;
+}
+.avtor::before{
+    color: var(--color_logo);
 }
 
 

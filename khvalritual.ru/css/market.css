@@ -51,6 +51,34 @@
     padding-top: 34px;
     padding-left: 95px;
 }
+.market_fon_bottom{
+    background-color: var(--brend-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    text-align: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    font-size: calc(16px + 10 * (100vw / 1920));
+    padding-top: 55px;
+    padding-bottom: 50px;
+}
+.market_fon_bottom div:nth-child(1){
+    background: url(../img/tomb.png) no-repeat;
+    padding-top: 34px;
+    padding-left: 80px;
+}
+.market_fon_bottom div:nth-child(2){
+    background: url(../img/fence.png) no-repeat;
+    padding-top: 34px;
+    padding-left: 80px;
+}
+.market_fon_bottom div:nth-child(3){
+    background: url(../img/portrait.png) no-repeat;
+    padding-top: 34px;
+    padding-left: 95px;
+}
 .market_content{
     display: -webkit-box;
     display: -ms-flexbox;
