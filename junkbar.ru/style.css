@@ -90,7 +90,7 @@ main{
   margin-bottom: 100px;
 }
 .sale div div img{
-  max-width: 350px;
+  width: 350px;
   height: 350px;
 }
 .sale div div p{
@@ -106,6 +106,13 @@ main{
 
 
 @media(max-width: 1280px){
+  .sale{
+    display: block;
+  }
+  .flex_bar{
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 @media (max-width: 860px){
   .up_bar{
@@ -116,7 +123,20 @@ main{
   .up_bar div img{
     padding-bottom: 10px;
   }
+  .sale div div{
+    max-width: calc(240px + 15 * (100vw / 1920));
+  }
+  .sale div div img{
+    width: calc(240px + 15 * (100vw / 1920));
+    height: calc(240px + 15 * (100vw / 1920));
+  }
 }
 @media (max-width: 540px){
-  
+  .sale div div{
+    max-width: calc(150px + 120 * (100vw / 1920));
+  }
+  .sale div div img{
+    width: calc(150px + 120 * (100vw / 1920));
+    height: calc(150px + 120 * (100vw / 1920));
+  }
 }
