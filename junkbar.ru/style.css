@@ -45,10 +45,14 @@ header p{
 }
 /*END HEADER*/
 main{
-  margin: 10% auto 0 auto;
+  margin: 10% auto 10% auto;
   text-align: center;
   max-width: 50%;
   font-size: calc(18px + 18 * (100vw / 1920));
+}
+main p{
+  font-family: var(--font);
+  font-size: calc(22px + 18 * (100vw / 1920));
 }
 /*SECTION-BAR START*/
 .bar{
@@ -81,6 +85,8 @@ main{
   top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: calc(5px + 50 * (100vw / 1920));
+  font-family: var(--font);
 }
 /*SECTION-BAR END*/
 /*SECTION-SALE START*/
@@ -108,6 +114,9 @@ main{
   padding: 15px 0 15px 0;
   height: 110px;
 }
+.flex_bar span{
+  color: var(--orange);
+}
 /*SECTION-SALE END*/
 /*SECTION-SOC-NEW START*/
 .soc_new{
@@ -123,6 +132,9 @@ main{
 .soc_new a{
   color: white;
   padding-inline: 15px;
+}
+.soc_new a img{
+  width: 70px;
 }
 /*SECTION-SOC-NEW END*/
 /*SECTION-CONTACT START*/
@@ -182,6 +194,9 @@ h3{
   .contact_content{
     margin-bottom: 50px;
   }
+  .soc_new a img{
+    width: 60px;
+  }
 
 }
 @media (max-width: 540px){
@@ -197,6 +212,13 @@ h3{
     height: 110px;
   }
   .map{
-    width: 300px;
+    width: 270px;
+    height: 230px;
+    overflow: hidden;
+  }
+  .soc_new a img{
+    width: 40px;
   }
 }
+
+
