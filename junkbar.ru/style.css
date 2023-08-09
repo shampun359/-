@@ -81,6 +81,7 @@ main p{
   margin-top: -4px;
 }
 .mid_bar p{
+  min-width: 380px;
   position: absolute;
   top: 25%;
   left: 50%;
