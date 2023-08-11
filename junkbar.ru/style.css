@@ -116,6 +116,7 @@ main p{
   font-family: var(--font);
   padding: 15px 0 15px 0;
   height: 110px;
+  padding-inline: 10px;
 }
 .flex_bar span{
   color: var(--orange);
@@ -273,6 +274,7 @@ h6 img{
   }
   .sale div div p{
     height: 110px;
+    padding-inline: 5px;
   }
   .map{
     width: 280px;
