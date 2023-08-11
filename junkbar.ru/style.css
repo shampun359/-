@@ -24,10 +24,17 @@ body{
 /*START HEADER*/
 header{
   margin-top: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-transform: uppercase;
   font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   font-family:'intro';
 }
@@ -62,7 +69,10 @@ main p{
   padding: 50px 0 50px 38px;
   background-color: black;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 .up_bar div img{
@@ -86,6 +96,8 @@ main p{
   position: absolute;
   top: 25%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   font-size: calc(9px + 70 * (100vw / 1920));
   font-family: var(--font);
@@ -95,7 +107,10 @@ main p{
 /*SECTION-SALE START*/
 .sale{
   margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 .sale div div{
@@ -131,7 +146,11 @@ main p{
   font-family: var(--font);
   background-image: url(img/background-soc.png);
   padding-block: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 .soc_new a{
@@ -146,7 +165,10 @@ main p{
 /*SECTION-CONTACT START*/
 .contact{
   margin-top: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   font-family: var(--font);
 }
@@ -171,8 +193,12 @@ footer{
   background-color: black;
   color: white;
   font-family: var(--font);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 150px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 .footer_left img{
@@ -225,12 +251,19 @@ h6 img{
     display: block;
   }
   .flex_bar{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
   }
 }
 @media (max-width: 860px){
   .up_bar{
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     text-align:center;
     padding: 50px 0 50px 0;
@@ -248,8 +281,13 @@ h6 img{
   }
   .contact{
     margin-top: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     text-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
   .contact_content{
