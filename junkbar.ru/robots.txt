@@ -1,7 +1,0 @@
-User-agent: YandexBot
-Host: https://www.khvalritual.ru/
-Sitemap: https://www.khvalritual.ru/Sitemap.txt
-User-agent: Googlebot
-Sitemap: https://www.khvalritual.ru/Sitemap.txt
-User-agent: *
-Sitemap: https://www.khvalritual.ru/Sitemap.txt
