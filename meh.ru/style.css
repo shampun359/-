@@ -162,6 +162,59 @@ h4{
 .contact-content a{
     color: black;
 }
+/*contact section end***************************/
+h5{
+    text-align: center;
+    font-size: calc(16px + 36 * (100vw / 1920));
+    margin-bottom: 100px;
+    margin-top: 150px;
+}
+.marquee-infinite {
+    margin: 30px auto;
+    max-width: 100%;
+    overflow: hidden;
+}
+.marquee-infinite div {
+    display: flex;
+    width: 200%;
+    animation: marquee-infinite 20s linear infinite;
+}
+.marquee-infinite h1 {
+    white-space: nowrap;
+    width: 100%;
+}
+.marquee-infinite span {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.marquee-infinite img {
+    width: 20%;
+}
+.marquee-infinite:hover div {
+    animation-play-state: paused;
+}
+@keyframes marquee-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+/*slider section end***************************/
+
+
+
+
 /*MEDIA*/
 @media(max-width: 1280px){
     .block-tool p{
@@ -239,5 +292,8 @@ h4{
     .our-content-left {
         margin-top: 50px;
     }
-    
+    h5{
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
   }
