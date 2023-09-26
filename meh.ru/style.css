@@ -95,11 +95,13 @@ h1{
     border: solid 1px black;
 }
 .block-tool p{
+    min-width: 14.5em;
     padding: 60px 60px 50px 60px ;
-    font-size: calc(16px + 15 * (100vw / 1920));
+    font-size: calc(8px + 15 * (100vw / 1920));
 }
 .block-tool img{
     padding-bottom: 40px;
+    max-width: 176px;
 }
 /*second section end***************************/
 h2{
@@ -185,8 +187,11 @@ h5{
 }
 .marquee-infinite span {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+}
+.marquee-infinite img {
+    margin: 2%;
 }
 .marquee-infinite img {
     width: 20%;
@@ -211,8 +216,52 @@ h5{
     }
 }
 /*slider section end***************************/
-
-
+footer{
+    background-color: #103233;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px 8% 20px 8%;
+    justify-content: space-between;
+}
+.footer-left{
+    display: flex;
+}
+.footer-logo img{
+    width: 100px;
+}
+.title-footer{
+    padding-top: 10px;
+    padding-left: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-size: calc(6px + 20 * (100vw / 1920));
+}
+.number-footer{
+    color: white;
+    font-size: calc(8px + 24 * (100vw / 1920));
+    line-height: 35px;
+    padding-top: 7px;
+}
+.number-footer a{
+    color: white;
+}
+.number-footer span{
+    font-size: calc(6px + 17 * (100vw / 1920));
+    padding-left: 11%;
+}
+.footer-right{
+    padding-top: 17px;
+}
+.autor{
+    text-align: center;
+    color: white;
+    background-color: #103233;
+}
+.autor a{
+    color: white;
+    display: none;
+}
 
 
 /*MEDIA*/
@@ -227,10 +276,16 @@ h5{
     .our-conent-right img{
         width: 400px;
     }
+    .footer-logo img{
+        width: 85px;
+    }
   }
   @media (max-width: 860px){
     .logo img{
         width: 110px;
+    }
+    .footer-logo img{
+        width: 60px;
     }
     .number-header {
         padding-top: 21px;
@@ -252,6 +307,12 @@ h5{
         align-items: center;
         margin-top: 0;
         text-align: center;
+    }
+    .number-footer {
+        line-height: 20px; 
+    }
+    .footer-right {
+        padding-top: 8px;
     }
   }
   @media (max-width: 540px){
@@ -295,5 +356,8 @@ h5{
     h5{
         margin-bottom: 50px;
         margin-top: 50px;
+    }
+    .footer-right{
+        display: none;
     }
   }
