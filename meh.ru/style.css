@@ -223,6 +223,7 @@ footer{
     padding-bottom: 20px;
     padding: 20px 8% 20px 8%;
     justify-content: space-between;
+    margin-top: 100px;
 }
 .footer-left{
     display: flex;
@@ -314,6 +315,9 @@ footer{
     .footer-right {
         padding-top: 8px;
     }
+    .contact-content {
+        margin-bottom: 45px;
+    }
   }
   @media (max-width: 540px){
     header{
@@ -359,5 +363,8 @@ footer{
     }
     .footer-right{
         display: none;
+    }
+    .contact-map iframe{
+        width: 280px;
     }
   }

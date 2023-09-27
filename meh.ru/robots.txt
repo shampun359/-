@@ -1,7 +1,7 @@
 User-agent: YandexBot
-Host: https://www.junkbar.ru/
-Sitemap: https://www.junkbar.ru/Sitemap.txt
+Host: https://www.malmeh64.ru/
+Sitemap: https://www.malmeh64.ru/Sitemap.txt
 User-agent: Googlebot
-Sitemap: https://www.junkbar.ru/Sitemap.txt
+Sitemap: https://www.malmeh64.ru/Sitemap.txt
 User-agent: *
-Sitemap: https://www.junkbar.ru/Sitemap.txt
+Sitemap: https://www.malmeh64.ru/Sitemap.txt
