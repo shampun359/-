@@ -104,7 +104,7 @@ h1{
     max-width: 176px;
 }
 /*second section end***************************/
-h2{
+h2, h3{
     padding-left: calc(8% + 6 * (100vw / 1920));
     font-size: calc(16px + 36 * (100vw / 1920));
     color: white;
@@ -117,11 +117,11 @@ h2{
 .our{
     margin-top: 100px;
 }
-h3{
+/*h3{
     text-align: center;
     font-size: calc(16px + 36 * (100vw / 1920));
     margin-bottom: 50px;
-}
+}*/
 .our-content{
     display: flex;
     justify-content: center;
@@ -167,7 +167,7 @@ h4{
 /*contact section end***************************/
 h5{
     text-align: center;
-    font-size: calc(16px + 36 * (100vw / 1920));
+    font-size: calc(10px + 42 * (100vw / 1920));
     margin-bottom: 100px;
     margin-top: 150px;
 }
@@ -175,11 +175,12 @@ h5{
     margin: 30px auto;
     max-width: 100%;
     overflow: hidden;
+    padding-bottom: 100px;
 }
 .marquee-infinite div {
     display: flex;
-    width: 200%;
-    animation: marquee-infinite 20s linear infinite;
+    width: 600%;
+    animation: marquee-infinite 45s linear infinite;
 }
 .marquee-infinite h1 {
     white-space: nowrap;
@@ -317,6 +318,12 @@ footer{
     }
     .contact-content {
         margin-bottom: 45px;
+    }
+    .contact-header img{
+        display: none;
+    }
+    .marquee-infinite {
+        padding-bottom: 0px;
     }
   }
   @media (max-width: 540px){
