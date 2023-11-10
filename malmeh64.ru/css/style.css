@@ -15,7 +15,7 @@ a {
 }
 
 main {
-    background-image: url(img/fon.png);
+    background-image: url(../img/fon.png);
 }
 header{
     display: -webkit-box;
@@ -146,7 +146,7 @@ h1{
 .block-sale{
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url(img/snow-fon.jpg);
+    background-image: url(../img/snow-fon.jpg);
     font-size: calc(8px + 40 * (100vw / 1920));
     text-align: center;
     color: #002137;
@@ -169,7 +169,7 @@ h6{
     padding-bottom: 15%;
 }
 .section-second{
-    background-image: url(img/remont.png);
+    background-image: url(../img/remont.png);
     background-repeat: no-repeat;
 }
 .section-second a{
@@ -334,8 +334,10 @@ footer{
         align-items: center;
     }
      .block-tool p{
-        padding: 25px 13px 25px 13px ;
-        font-size: calc(13px + 15 * (100vw / 1920));
+        padding: 0 ;
+        padding-bottom: 10px;
+        font-size: calc(11px + 15 * (100vw / 1920));
+        min-width: 12em;
     }
     .block-tool img{
         padding-bottom: 20px;
@@ -393,6 +395,10 @@ footer{
     }
     .marquee-infinite {
         padding-bottom: 0px;
+    }
+    h6 {
+        padding-top: 35%;
+        padding-bottom: 35%;
     }
   }
   @media (max-width: 540px){
@@ -456,6 +462,6 @@ footer{
     .block-sale{
         padding-top: 50px;
         padding-bottom: 50px;
-        
     }
+
   }
