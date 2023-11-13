@@ -3,6 +3,7 @@
     justify-content: center;
     font-size: calc(10px + 21 * (100vw / 1920));
     color: black;
+    margin-top: 10px;
 }
 .nav:hover{
     text-decoration: underline;
